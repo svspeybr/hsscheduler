@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.opta.coreScheduler.app.Controller">
+   <children>
+      <VBox layoutX="12.0" layoutY="144.0" prefHeight="135.0" prefWidth="115.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="33.0" prefWidth="115.0" text="Button" />
+            <Button mnemonicParsing="false" prefHeight="33.0" prefWidth="115.0" text="Button" />
+            <Button mnemonicParsing="false" prefHeight="33.0" prefWidth="115.0" text="Button" />
+            <Button mnemonicParsing="false" prefHeight="33.0" prefWidth="115.0" text="Button" />
+         </children>
+      </VBox>
+      <TabPane layoutX="134.0" prefHeight="600.0" prefWidth="867.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="tabPartition" text="Partition">
+           <fx:include source="tabPartition.fxml" />
+          </Tab>
+          <Tab fx:id="tabDraft" text="Draft">
+              <fx:include source="tabDraft.fxml" />
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

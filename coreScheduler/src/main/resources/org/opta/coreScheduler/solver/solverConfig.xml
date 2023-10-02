@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<solver>
+
+    <solutionClass>org.opta.coreScheduler.domain.Schedule</solutionClass>
+    <entityClass>org.opta.coreScheduler.domain.Lesson</entityClass>
+
+    <scoreDirectorFactory>
+        <constraintProviderClass>org.opta.coreScheduler.solver.LessonConstraintProvider</constraintProviderClass>
+    </scoreDirectorFactory>
+
+    <termination>
+        <secondsSpentLimit>30</secondsSpentLimit>
+    </termination>
+
+</solver>

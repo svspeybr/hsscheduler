@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<solver>
+
+    <solutionClass>org.opta.groupScheduler.domain.GroupScheduleSolution</solutionClass>
+    <entityClass>org.opta.groupScheduler.domain.GroupPerCourse</entityClass>
+    <entityClass>org.opta.groupScheduler.domain.LessonAssignment</entityClass>
+
+    <scoreDirectorFactory>
+        <constraintProviderClass>org.opta.groupScheduler.solver.LessonAssignmentConstraintProvider</constraintProviderClass>
+    </scoreDirectorFactory>
+
+    <termination>
+        <secondsSpentLimit>10</secondsSpentLimit>
+    </termination>
+
+</solver>
