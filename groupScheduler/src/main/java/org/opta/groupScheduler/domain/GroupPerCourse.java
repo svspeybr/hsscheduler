@@ -1,5 +1,6 @@
 package org.opta.groupScheduler.domain;
 
+import com.fasterxml.jackson.annotation.*;
 import org.optaplanner.core.api.domain.entity.PlanningEntity;
 import org.optaplanner.core.api.domain.valuerange.ValueRangeProvider;
 import org.optaplanner.core.api.domain.variable.PlanningVariable;
@@ -18,16 +19,19 @@ public class GroupPerCourse {
     public GroupPerCourse(){
 
     }
-    public GroupPerCourse(Integer id, ClassGroup classGroup, CourseLevel courseLevel) {
+    @JsonCreator
+    public GroupPerCourse(@JsonProperty("GPCid") Integer id, @JsonProperty("CGid") ClassGroup classGroup, @JsonProperty("Clid") CourseLevel courseLevel) {
         this.id = id;
         this.classGroup = classGroup;
         this.courseLevel = courseLevel;
     }
 
+    @JsonGetter("GPCid")
     public Integer getId() {
         return id;
     }
 
+    @JsonSetter("GPCid")
     public void setId(Integer id) {
         this.id = id;
     }
@@ -36,6 +40,7 @@ public class GroupPerCourse {
     public Integer getCourseTaskId() {
         return courseTaskId;
     }
+    @JsonIgnore
     @ValueRangeProvider(id="courseIds")
     public List<Integer> getPossibleTaskIds() {
         return this.courseLevel.getRelatedTaskIds();
@@ -46,22 +51,25 @@ public class GroupPerCourse {
         this.courseTaskId = courseTaskId;
     }
 
+    @JsonGetter("CGid")
     public ClassGroup getClassGroup() {
         return classGroup;
     }
-
+    @JsonSetter("CGid")
     public void setClassGroup(ClassGroup classGroup) {
         this.classGroup = classGroup;
     }
 
+    @JsonGetter("CLid")
     public CourseLevel getCourseLevel() {
         return courseLevel;
     }
-
+    @JsonSetter("CLid")
     public void setCourseLevel(CourseLevel courseLevel) {
         this.courseLevel = courseLevel;
     }
 
+    @JsonIgnore
     public Integer getSize(){return this.classGroup.getSize();}
 
     @Override

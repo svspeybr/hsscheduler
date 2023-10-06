@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<solver>
+
+    <solutionClass>org.opta.groupScheduler.domain.GroupScheduleSolution</solutionClass>
+    <entityClass>org.opta.groupScheduler.domain.GroupPerCourse</entityClass>
+    <entityClass>org.opta.groupScheduler.domain.LessonAssignment</entityClass>
+
+    <scoreDirectorFactory>
+        <constraintProviderClass>org.opta.groupScheduler.solver.LessonAssignmentConstraintProvider</constraintProviderClass>
+    </scoreDirectorFactory>
+
+    <termination>
+        <secondsSpentLimit>20</secondsSpentLimit>
+    </termination>
+
+    <constructionHeuristic>
+        <!--<constructionHeuristicType>FIRST_FIT</constructionHeuristicType>-->
+        <queuedEntityPlacer>
+            <entitySelector id="placerEntitySelector">
+                <entityClass>org.opta.groupScheduler.domain.GroupPerCourse</entityClass>
+            </entitySelector>
+            <changeMoveSelector>
+                <entitySelector mimicSelectorRef="placerEntitySelector"/>
+            </changeMoveSelector>
+        </queuedEntityPlacer>
+    </constructionHeuristic>
+
+    <constructionHeuristic>
+        <!--<constructionHeuristicType>FIRST_FIT</constructionHeuristicType>-->
+        <queuedEntityPlacer>
+            <entitySelector id="placerEntitySelector">
+                <entityClass>org.opta.groupScheduler.domain.LessonAssignment</entityClass>
+            </entitySelector>
+            <changeMoveSelector>
+                <entitySelector mimicSelectorRef="placerEntitySelector"/>
+            </changeMoveSelector>
+        </queuedEntityPlacer>
+    </constructionHeuristic>
+
+    <localSearch>
+        <localSearchType>LATE_ACCEPTANCE</localSearchType>
+    </localSearch>
+</solver>

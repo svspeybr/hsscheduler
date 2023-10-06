@@ -49,7 +49,7 @@ public class PartitionSolver {
             final Long SINGLETON_TIME_TABLE_ID = 1L;
             //SOLVER
             //String SOURCE = "org.opta.groupScheduler\\solver\\solverConfig.xml"; TODO: FROM RESOURCE INSTEAD OF FROM FILE??
-            File file = new File("C:\\Users\\simon\\Desktop\\Scheduling\\hsscheduler\\groupScheduler\\src\\main\\resources\\org.opta.groupScheduler\\solver\\solverConfig.xml");
+            File file = new File("C:\\Users\\simon\\Desktop\\Scheduling\\hsscheduler\\groupScheduler\\src\\main\\resources\\org\\opta\\groupScheduler\\solver\\solverConfig.xml");
             SolverConfig solverConfig = SolverConfig.createFromXmlFile(file);
             SolverFactory solverFactory = SolverFactory.create(solverConfig);
             SolverManager<GroupScheduleSolution, Long> solverManager = SolverManager.create(solverConfig, new SolverManagerConfig());
@@ -134,6 +134,10 @@ public class PartitionSolver {
             }
         }
         return mapByRow;
+    }
+
+    public GroupScheduleSolution getScheduleSolution() {
+        return scheduleSolution;
     }
 
     public List<String> getGroupNames(){

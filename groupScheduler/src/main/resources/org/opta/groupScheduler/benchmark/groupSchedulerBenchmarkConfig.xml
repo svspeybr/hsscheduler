@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plannerBenchmark xmlns="https://www.optaplanner.org/xsd/benchmark" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="https://www.optaplanner.org/xsd/benchmark https://www.optaplanner.org/xsd/benchmark/benchmark.xsd">
+    <benchmarkDirectory>groupScheduler/data/benchmarkReport</benchmarkDirectory>
+    <warmUpSecondsSpentLimit>10</warmUpSecondsSpentLimit>
+
+    <inheritedSolverBenchmark>
+        <solver>
+            <solutionClass>org.opta.groupScheduler.domain.GroupScheduleSolution</solutionClass>
+            <entityClass>org.opta.groupScheduler.domain.GroupPerCourse</entityClass>
+            <entityClass>org.opta.groupScheduler.domain.LessonAssignment</entityClass>
+            <scoreDirectorFactory>
+                <constraintProviderClass>org.opta.groupScheduler.solver.LessonAssignmentConstraintProvider</constraintProviderClass>
+            </scoreDirectorFactory>
+            <termination>
+                <secondsSpentLimit>5</secondsSpentLimit>
+            </termination>
+        </solver>
+        <problemBenchmarks>
+            <solutionFileIOClass>org.opta.groupScheduler.fileIO.GroupJacksonSolutionFileIO</solutionFileIOClass>
+            <inputSolutionFile>C:\Users\simon\Desktop\Scheduling\hsscheduler\groupScheduler\data\unsolved\fifthYear.json</inputSolutionFile>
+            <inputSolutionFile>C:\Users\simon\Desktop\Scheduling\hsscheduler\groupScheduler\data\unsolved\sixthYear.json</inputSolutionFile>
+            <inputSolutionFile>C:\Users\simon\Desktop\Scheduling\hsscheduler\groupScheduler\data\unsolved\fourthYear.json</inputSolutionFile>
+            <inputSolutionFile>C:\Users\simon\Desktop\Scheduling\hsscheduler\groupScheduler\data\unsolved\thirdYear.json</inputSolutionFile>
+            <problemStatisticType>BEST_SCORE</problemStatisticType>
+        </problemBenchmarks>
+    </inheritedSolverBenchmark>
+
+
+    <solverBenchmark>
+        <name>FIRST_FIT</name>
+        <solver>
+            <scoreDirectorFactory>
+                <constraintProviderClass>org.opta.groupScheduler.solver.LessonAssignmentConstraintProvider</constraintProviderClass>
+            </scoreDirectorFactory>
+            <constructionHeuristic>
+                <!--<constructionHeuristicType>FIRST_FIT</constructionHeuristicType>-->
+                <queuedEntityPlacer>
+                    <entitySelector id="placerEntitySelector">
+                        <entityClass>org.opta.groupScheduler.domain.GroupPerCourse</entityClass>
+                    </entitySelector>
+                    <changeMoveSelector>
+                        <entitySelector mimicSelectorRef="placerEntitySelector"/>
+                    </changeMoveSelector>
+                </queuedEntityPlacer>
+            </constructionHeuristic>
+
+            <constructionHeuristic>
+                <!--<constructionHeuristicType>FIRST_FIT</constructionHeuristicType>-->
+                <queuedEntityPlacer>
+                    <entitySelector id="placerEntitySelector">
+                        <entityClass>org.opta.groupScheduler.domain.LessonAssignment</entityClass>
+                    </entitySelector>
+                    <changeMoveSelector>
+                        <entitySelector mimicSelectorRef="placerEntitySelector"/>
+                    </changeMoveSelector>
+                </queuedEntityPlacer>
+            </constructionHeuristic>
+
+            <localSearch>
+                <localSearchType>LATE_ACCEPTANCE</localSearchType>
+            </localSearch>
+        </solver>
+    </solverBenchmark>
+
+
+    <!--
+    <solverBenchmark>
+        <name>CHEAPEST_INSERTION</name>
+        <solver>
+            <constructionHeuristic>
+                <constructionHeuristicType>CHEAPEST_INSERTION</constructionHeuristicType>
+            </constructionHeuristic>
+            <localSearch>
+                <acceptor>
+                    <simulatedAnnealingStartingTemperature>100hard/0soft</simulatedAnnealingStartingTemperature>
+                </acceptor>
+                <forager>
+                    <acceptedCountLimit>4</acceptedCountLimit>
+                </forager>
+            </localSearch>
+        </solver>
+    </solverBenchmark>
+    -->
+
+</plannerBenchmark>

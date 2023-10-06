@@ -1,4 +1,4 @@
-package org.opta.groupScheduler.reader;
+package org.opta.groupScheduler.fileIO;
 
 import org.opta.groupScheduler.domain.*;
 import org.opta.groupScheduler.solver.PartitionSolver;

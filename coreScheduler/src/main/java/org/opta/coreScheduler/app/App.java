@@ -4,12 +4,6 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import org.opta.groupScheduler.reader.UntisTextReader;
-import org.opta.groupScheduler.solver.PartitionSolver;
-
-
-import java.util.HashSet;
-import java.util.List;
 
 public class App extends Application {
     @Override

@@ -1,10 +1,16 @@
 package org.opta.groupScheduler.domain;
 
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "CLid")
 public class CourseLevel {
 
+    @JsonProperty("CLid")
     private Integer id;
 
     private List<Integer> relatedTaskIds;

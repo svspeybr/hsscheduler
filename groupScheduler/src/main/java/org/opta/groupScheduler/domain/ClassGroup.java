@@ -1,7 +1,13 @@
 package org.opta.groupScheduler.domain;
 
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+
+@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "CGid")
 public class ClassGroup {
 
+    @JsonProperty("CGid")
     private String name;
     private Integer size;
 
@@ -36,5 +42,9 @@ public class ClassGroup {
 
     public void setNumberOfLessons(Integer numberOfLessons) {
         this.numberOfLessons = numberOfLessons;
+    }
+    @Override
+    public String toString(){
+        return "cg - " + this.name;
     }
 }

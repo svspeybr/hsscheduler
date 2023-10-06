@@ -1,0 +1,1277 @@
+{
+  "classGroupList" : [ {
+    "CGid" : "4 ECWE",
+    "size" : 7,
+    "numberOfLessons" : 35
+  }, {
+    "CGid" : "4 GRLA",
+    "size" : 4,
+    "numberOfLessons" : 35
+  }, {
+    "CGid" : "4 HUM",
+    "size" : 21,
+    "numberOfLessons" : 35
+  }, {
+    "CGid" : "4 LA",
+    "size" : 16,
+    "numberOfLessons" : 35
+  }, {
+    "CGid" : "4 MT",
+    "size" : 16,
+    "numberOfLessons" : 35
+  }, {
+    "CGid" : "4 NW",
+    "size" : 19,
+    "numberOfLessons" : 35
+  } ],
+  "courseLevelList" : [ {
+    "CLid" : 592,
+    "relatedTaskIds" : [ 592 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "AA",
+    "classGroupList" : [ "4 ECWE" ]
+  }, {
+    "CLid" : 548,
+    "relatedTaskIds" : [ 548 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "AA",
+    "classGroupList" : [ "4 MT" ]
+  }, {
+    "CLid" : 612,
+    "relatedTaskIds" : [ 612 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "AA",
+    "classGroupList" : [ "4 HUM" ]
+  }, {
+    "CLid" : 574,
+    "relatedTaskIds" : [ 574 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "AA",
+    "classGroupList" : [ "4 LA", "4 GRLA" ]
+  }, {
+    "CLid" : 638,
+    "relatedTaskIds" : [ 638 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "AA",
+    "classGroupList" : [ "4 NW" ]
+  }, {
+    "CLid" : 1473,
+    "relatedTaskIds" : [ 1473 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "ST",
+    "classGroupList" : [ "4 MT" ]
+  }, {
+    "CLid" : 1477,
+    "relatedTaskIds" : [ 1477 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "ST",
+    "classGroupList" : [ "4 LA" ]
+  }, {
+    "CLid" : 1481,
+    "relatedTaskIds" : [ 1481 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "ST",
+    "classGroupList" : [ "4 NW" ]
+  }, {
+    "CLid" : 1365,
+    "relatedTaskIds" : [ 1365, 1337, 1370, 1339, 1341 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "LO",
+    "classGroupList" : [ "4 ECWE", "4 GRLA", "4 HUM", "4 LA", "4 MT", "4 NW" ]
+  }, {
+    "CLid" : 1478,
+    "relatedTaskIds" : [ 1478 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "FI",
+    "classGroupList" : [ "4 HUM" ]
+  }, {
+    "CLid" : 1823,
+    "relatedTaskIds" : [ 1823 ],
+    "upperBoundClassSize" : 83,
+    "topic" : "HK",
+    "classGroupList" : [ "4 HUM", "4 LA", "4 NW", "4 MT", "4 ECWE", "4 GRLA" ]
+  }, {
+    "CLid" : 608,
+    "relatedTaskIds" : [ 608 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "CH",
+    "classGroupList" : [ "4 HUM", "4 GRLA" ]
+  }, {
+    "CLid" : 545,
+    "relatedTaskIds" : [ 545 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "CH",
+    "classGroupList" : [ "4 MT" ]
+  }, {
+    "CLid" : 658,
+    "relatedTaskIds" : [ 658 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "CH",
+    "classGroupList" : [ "4 NW" ]
+  }, {
+    "CLid" : 590,
+    "relatedTaskIds" : [ 590 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "CH",
+    "classGroupList" : [ "4 LA", "4 ECWE" ]
+  }, {
+    "CLid" : 547,
+    "relatedTaskIds" : [ 547 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "BI",
+    "classGroupList" : [ "4 MT" ]
+  }, {
+    "CLid" : 660,
+    "relatedTaskIds" : [ 660 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "BI",
+    "classGroupList" : [ "4 NW" ]
+  }, {
+    "CLid" : 604,
+    "relatedTaskIds" : [ 604 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "BI",
+    "classGroupList" : [ "4 LA", "4 ECWE" ]
+  }, {
+    "CLid" : 591,
+    "relatedTaskIds" : [ 591 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "BI",
+    "classGroupList" : [ "4 HUM", "4 GRLA" ]
+  }, {
+    "CLid" : 581,
+    "relatedTaskIds" : [ 581, 616, 648, 538, 554 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "GO",
+    "classGroupList" : [ "4 ECWE", "4 GRLA", "4 HUM", "4 LA", "4 MT", "4 NW" ]
+  }, {
+    "CLid" : 560,
+    "relatedTaskIds" : [ 560 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "EN",
+    "classGroupList" : [ "4 LA", "4 GRLA" ]
+  }, {
+    "CLid" : 1697,
+    "relatedTaskIds" : [ 1697 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "EN",
+    "classGroupList" : [ "4 LA" ]
+  }, {
+    "CLid" : 646,
+    "relatedTaskIds" : [ 646 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "EN",
+    "classGroupList" : [ "4 NW" ]
+  }, {
+    "CLid" : 584,
+    "relatedTaskIds" : [ 584 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "EN",
+    "classGroupList" : [ "4 ECWE" ]
+  }, {
+    "CLid" : 618,
+    "relatedTaskIds" : [ 618 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "EN",
+    "classGroupList" : [ "4 HUM" ]
+  }, {
+    "CLid" : 541,
+    "relatedTaskIds" : [ 541 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "EN",
+    "classGroupList" : [ "4 MT" ]
+  }, {
+    "CLid" : 1479,
+    "relatedTaskIds" : [ 1479 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "KU",
+    "classGroupList" : [ "4 HUM" ]
+  }, {
+    "CLid" : 587,
+    "relatedTaskIds" : [ 587 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "GR",
+    "classGroupList" : [ "4 GRLA" ]
+  }, {
+    "CLid" : 624,
+    "relatedTaskIds" : [ 624 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "FR",
+    "classGroupList" : [ "4 HUM" ]
+  }, {
+    "CLid" : 1322,
+    "relatedTaskIds" : [ 1322 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "FR",
+    "classGroupList" : [ "4 LA", "4 GRLA" ]
+  }, {
+    "CLid" : 540,
+    "relatedTaskIds" : [ 540 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "FR",
+    "classGroupList" : [ "4 MT" ]
+  }, {
+    "CLid" : 652,
+    "relatedTaskIds" : [ 652 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "FR",
+    "classGroupList" : [ "4 NW" ]
+  }, {
+    "CLid" : 1135,
+    "relatedTaskIds" : [ 1135 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "FR",
+    "classGroupList" : [ "4 ECWE" ]
+  }, {
+    "CLid" : 1693,
+    "relatedTaskIds" : [ 1693 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "CO",
+    "classGroupList" : [ "4 MT" ]
+  }, {
+    "CLid" : 640,
+    "relatedTaskIds" : [ 640 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "DU",
+    "classGroupList" : [ "4 NW" ]
+  }, {
+    "CLid" : 1474,
+    "relatedTaskIds" : [ 1474 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "DU",
+    "classGroupList" : [ "4 LA" ]
+  }, {
+    "CLid" : 1482,
+    "relatedTaskIds" : [ 1482 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "DU",
+    "classGroupList" : [ "4 ECWE" ]
+  }, {
+    "CLid" : 542,
+    "relatedTaskIds" : [ 542 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "DU",
+    "classGroupList" : [ "4 MT" ]
+  }, {
+    "CLid" : 1696,
+    "relatedTaskIds" : [ 1696 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "WI",
+    "classGroupList" : [ "4 MT" ]
+  }, {
+    "CLid" : 626,
+    "relatedTaskIds" : [ 626 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "WI",
+    "classGroupList" : [ "4 HUM" ]
+  }, {
+    "CLid" : 564,
+    "relatedTaskIds" : [ 564 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "WI",
+    "classGroupList" : [ "4 ECWE" ]
+  }, {
+    "CLid" : 588,
+    "relatedTaskIds" : [ 588 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "WI",
+    "classGroupList" : [ "4 LA", "4 GRLA" ]
+  }, {
+    "CLid" : 654,
+    "relatedTaskIds" : [ 654 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "WI",
+    "classGroupList" : [ "4 NW" ]
+  }, {
+    "CLid" : 656,
+    "relatedTaskIds" : [ 656 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "FY",
+    "classGroupList" : [ "4 NW" ]
+  }, {
+    "CLid" : 1692,
+    "relatedTaskIds" : [ 1692 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "FY",
+    "classGroupList" : [ "4 LA", "4 ECWE" ]
+  }, {
+    "CLid" : 606,
+    "relatedTaskIds" : [ 606 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "FY",
+    "classGroupList" : [ "4 HUM", "4 GRLA" ]
+  }, {
+    "CLid" : 1695,
+    "relatedTaskIds" : [ 1695 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "FY",
+    "classGroupList" : [ "4 MT" ]
+  }, {
+    "CLid" : 597,
+    "relatedTaskIds" : [ 597 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "LA",
+    "classGroupList" : [ "4 LA" ]
+  }, {
+    "CLid" : 586,
+    "relatedTaskIds" : [ 586 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "LA",
+    "classGroupList" : [ "4 LA", "4 GRLA" ]
+  }, {
+    "CLid" : 1480,
+    "relatedTaskIds" : [ 1480 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "SoP",
+    "classGroupList" : [ "4 HUM" ]
+  }, {
+    "CLid" : 582,
+    "relatedTaskIds" : [ 582 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "NE",
+    "classGroupList" : [ "4 ECWE" ]
+  }, {
+    "CLid" : 650,
+    "relatedTaskIds" : [ 650 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "NE",
+    "classGroupList" : [ "4 NW" ]
+  }, {
+    "CLid" : 539,
+    "relatedTaskIds" : [ 539 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "NE",
+    "classGroupList" : [ "4 MT" ]
+  }, {
+    "CLid" : 622,
+    "relatedTaskIds" : [ 622 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "NE",
+    "classGroupList" : [ "4 HUM" ]
+  }, {
+    "CLid" : 1134,
+    "relatedTaskIds" : [ 1134 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "NE",
+    "classGroupList" : [ "4 LA", "4 GRLA" ]
+  }, {
+    "CLid" : 1338,
+    "relatedTaskIds" : [ 1338 ],
+    "upperBoundClassSize" : 35,
+    "topic" : "SP",
+    "classGroupList" : [ "4 NW", "4 MT" ]
+  }, {
+    "CLid" : 1340,
+    "relatedTaskIds" : [ 1340 ],
+    "upperBoundClassSize" : 48,
+    "topic" : "SP",
+    "classGroupList" : [ "4 LA", "4 HUM", "4 ECWE", "4 GRLA" ]
+  }, {
+    "CLid" : 576,
+    "relatedTaskIds" : [ 576, 1298, 644, 549, 598 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "GE",
+    "classGroupList" : [ "4 ECWE", "4 GRLA", "4 HUM", "4 LA", "4 MT", "4 NW" ]
+  }, {
+    "CLid" : 664,
+    "relatedTaskIds" : [ 664 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "EC",
+    "classGroupList" : [ "4 ECWE" ]
+  }, {
+    "CLid" : 1694,
+    "relatedTaskIds" : [ 1694 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "EC",
+    "classGroupList" : [ "4 MT" ]
+  } ],
+  "groupPerCourseList" : [ {
+    "GPCid" : 2,
+    "CGid" : "4 ECWE",
+    "courseTaskId" : null,
+    "CLid" : 1365
+  }, {
+    "GPCid" : 3,
+    "CGid" : "4 GRLA",
+    "courseTaskId" : null,
+    "CLid" : 1365
+  }, {
+    "GPCid" : 4,
+    "CGid" : "4 HUM",
+    "courseTaskId" : null,
+    "CLid" : 1365
+  }, {
+    "GPCid" : 5,
+    "CGid" : "4 LA",
+    "courseTaskId" : null,
+    "CLid" : 1365
+  }, {
+    "GPCid" : 6,
+    "CGid" : "4 MT",
+    "courseTaskId" : null,
+    "CLid" : 1365
+  }, {
+    "GPCid" : 7,
+    "CGid" : "4 NW",
+    "courseTaskId" : null,
+    "CLid" : 1365
+  }, {
+    "GPCid" : 8,
+    "CGid" : "4 ECWE",
+    "courseTaskId" : null,
+    "CLid" : 581
+  }, {
+    "GPCid" : 9,
+    "CGid" : "4 GRLA",
+    "courseTaskId" : null,
+    "CLid" : 581
+  }, {
+    "GPCid" : 10,
+    "CGid" : "4 HUM",
+    "courseTaskId" : null,
+    "CLid" : 581
+  }, {
+    "GPCid" : 11,
+    "CGid" : "4 LA",
+    "courseTaskId" : null,
+    "CLid" : 581
+  }, {
+    "GPCid" : 12,
+    "CGid" : "4 MT",
+    "courseTaskId" : null,
+    "CLid" : 581
+  }, {
+    "GPCid" : 13,
+    "CGid" : "4 NW",
+    "courseTaskId" : null,
+    "CLid" : 581
+  }, {
+    "GPCid" : 14,
+    "CGid" : "4 ECWE",
+    "courseTaskId" : null,
+    "CLid" : 576
+  }, {
+    "GPCid" : 15,
+    "CGid" : "4 GRLA",
+    "courseTaskId" : null,
+    "CLid" : 576
+  }, {
+    "GPCid" : 16,
+    "CGid" : "4 HUM",
+    "courseTaskId" : null,
+    "CLid" : 576
+  }, {
+    "GPCid" : 17,
+    "CGid" : "4 LA",
+    "courseTaskId" : null,
+    "CLid" : 576
+  }, {
+    "GPCid" : 18,
+    "CGid" : "4 MT",
+    "courseTaskId" : null,
+    "CLid" : 576
+  }, {
+    "GPCid" : 19,
+    "CGid" : "4 NW",
+    "courseTaskId" : null,
+    "CLid" : 576
+  } ],
+  "lessonAssignmentList" : [ {
+    "type" : "fixedTask",
+    "LAid" : 20,
+    "CLid" : 640,
+    "timeslot" : null
+  }, {
+    "type" : "unfixedTask",
+    "LAid" : 21,
+    "CTid" : 644,
+    "timeslot" : null
+  }, {
+    "type" : "unfixedTask",
+    "LAid" : 22,
+    "CTid" : 644,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 23,
+    "CLid" : 646,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 24,
+    "CLid" : 646,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 25,
+    "CLid" : 646,
+    "timeslot" : null
+  }, {
+    "type" : "unfixedTask",
+    "LAid" : 26,
+    "CTid" : 648,
+    "timeslot" : null
+  }, {
+    "type" : "unfixedTask",
+    "LAid" : 27,
+    "CTid" : 648,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 28,
+    "CLid" : 650,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 29,
+    "CLid" : 650,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 30,
+    "CLid" : 650,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 31,
+    "CLid" : 650,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 32,
+    "CLid" : 652,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 33,
+    "CLid" : 652,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 34,
+    "CLid" : 652,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 35,
+    "CLid" : 652,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 36,
+    "CLid" : 654,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 37,
+    "CLid" : 654,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 38,
+    "CLid" : 654,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 39,
+    "CLid" : 654,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 40,
+    "CLid" : 654,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 41,
+    "CLid" : 656,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 42,
+    "CLid" : 656,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 43,
+    "CLid" : 658,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 44,
+    "CLid" : 658,
+    "timeslot" : null
+  }, {
+    "type" : "unfixedTask",
+    "LAid" : 45,
+    "CTid" : 1298,
+    "timeslot" : null
+  }, {
+    "type" : "unfixedTask",
+    "LAid" : 46,
+    "CTid" : 1298,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 47,
+    "CLid" : 660,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 48,
+    "CLid" : 660,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 49,
+    "CLid" : 664,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 50,
+    "CLid" : 664,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 51,
+    "CLid" : 664,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 52,
+    "CLid" : 664,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 53,
+    "CLid" : 664,
+    "timeslot" : null
+  }, {
+    "type" : "unfixedTask",
+    "LAid" : 54,
+    "CTid" : 538,
+    "timeslot" : null
+  }, {
+    "type" : "unfixedTask",
+    "LAid" : 55,
+    "CTid" : 538,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 56,
+    "CLid" : 539,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 57,
+    "CLid" : 539,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 58,
+    "CLid" : 539,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 59,
+    "CLid" : 539,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 60,
+    "CLid" : 540,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 61,
+    "CLid" : 540,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 62,
+    "CLid" : 540,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 63,
+    "CLid" : 540,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 64,
+    "CLid" : 1692,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 65,
+    "CLid" : 541,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 66,
+    "CLid" : 541,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 67,
+    "CLid" : 541,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 68,
+    "CLid" : 1693,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 69,
+    "CLid" : 1693,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 70,
+    "CLid" : 542,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 71,
+    "CLid" : 542,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 72,
+    "CLid" : 1694,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 73,
+    "CLid" : 1694,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 74,
+    "CLid" : 1695,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 75,
+    "CLid" : 1823,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 76,
+    "CLid" : 1696,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 77,
+    "CLid" : 1696,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 78,
+    "CLid" : 1696,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 79,
+    "CLid" : 1696,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 80,
+    "CLid" : 545,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 81,
+    "CLid" : 1697,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 82,
+    "CLid" : 547,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 83,
+    "CLid" : 548,
+    "timeslot" : null
+  }, {
+    "type" : "unfixedTask",
+    "LAid" : 84,
+    "CTid" : 549,
+    "timeslot" : null
+  }, {
+    "type" : "unfixedTask",
+    "LAid" : 85,
+    "CTid" : 549,
+    "timeslot" : null
+  }, {
+    "type" : "unfixedTask",
+    "LAid" : 86,
+    "CTid" : 554,
+    "timeslot" : null
+  }, {
+    "type" : "unfixedTask",
+    "LAid" : 87,
+    "CTid" : 554,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 88,
+    "CLid" : 1322,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 89,
+    "CLid" : 1322,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 90,
+    "CLid" : 1322,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 91,
+    "CLid" : 560,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 92,
+    "CLid" : 560,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 93,
+    "CLid" : 564,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 94,
+    "CLid" : 564,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 95,
+    "CLid" : 564,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 96,
+    "CLid" : 564,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 97,
+    "CLid" : 564,
+    "timeslot" : null
+  }, {
+    "type" : "unfixedTask",
+    "LAid" : 98,
+    "CTid" : 1337,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 99,
+    "CLid" : 1338,
+    "timeslot" : null
+  }, {
+    "type" : "unfixedTask",
+    "LAid" : 100,
+    "CTid" : 1339,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 101,
+    "CLid" : 1340,
+    "timeslot" : null
+  }, {
+    "type" : "unfixedTask",
+    "LAid" : 102,
+    "CTid" : 1341,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 103,
+    "CLid" : 574,
+    "timeslot" : null
+  }, {
+    "type" : "unfixedTask",
+    "LAid" : 104,
+    "CTid" : 576,
+    "timeslot" : null
+  }, {
+    "type" : "unfixedTask",
+    "LAid" : 105,
+    "CTid" : 576,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 106,
+    "CLid" : 1473,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 107,
+    "CLid" : 1474,
+    "timeslot" : null
+  }, {
+    "type" : "unfixedTask",
+    "LAid" : 108,
+    "CTid" : 581,
+    "timeslot" : null
+  }, {
+    "type" : "unfixedTask",
+    "LAid" : 109,
+    "CTid" : 581,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 110,
+    "CLid" : 1477,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 111,
+    "CLid" : 582,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 112,
+    "CLid" : 582,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 113,
+    "CLid" : 582,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 114,
+    "CLid" : 582,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 115,
+    "CLid" : 1478,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 116,
+    "CLid" : 1478,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 117,
+    "CLid" : 1479,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 118,
+    "CLid" : 1479,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 119,
+    "CLid" : 584,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 120,
+    "CLid" : 584,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 121,
+    "CLid" : 584,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 122,
+    "CLid" : 1480,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 123,
+    "CLid" : 1480,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 124,
+    "CLid" : 1480,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 125,
+    "CLid" : 1481,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 126,
+    "CLid" : 1481,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 127,
+    "CLid" : 586,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 128,
+    "CLid" : 586,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 129,
+    "CLid" : 586,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 130,
+    "CLid" : 586,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 131,
+    "CLid" : 1482,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 132,
+    "CLid" : 587,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 133,
+    "CLid" : 587,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 134,
+    "CLid" : 587,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 135,
+    "CLid" : 587,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 136,
+    "CLid" : 588,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 137,
+    "CLid" : 588,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 138,
+    "CLid" : 588,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 139,
+    "CLid" : 588,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 140,
+    "CLid" : 588,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 141,
+    "CLid" : 590,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 142,
+    "CLid" : 591,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 143,
+    "CLid" : 592,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 144,
+    "CLid" : 597,
+    "timeslot" : null
+  }, {
+    "type" : "unfixedTask",
+    "LAid" : 145,
+    "CTid" : 1365,
+    "timeslot" : null
+  }, {
+    "type" : "unfixedTask",
+    "LAid" : 146,
+    "CTid" : 598,
+    "timeslot" : null
+  }, {
+    "type" : "unfixedTask",
+    "LAid" : 147,
+    "CTid" : 598,
+    "timeslot" : null
+  }, {
+    "type" : "unfixedTask",
+    "LAid" : 148,
+    "CTid" : 1370,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 149,
+    "CLid" : 604,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 150,
+    "CLid" : 606,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 151,
+    "CLid" : 608,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 152,
+    "CLid" : 612,
+    "timeslot" : null
+  }, {
+    "type" : "unfixedTask",
+    "LAid" : 153,
+    "CTid" : 616,
+    "timeslot" : null
+  }, {
+    "type" : "unfixedTask",
+    "LAid" : 154,
+    "CTid" : 616,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 155,
+    "CLid" : 618,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 156,
+    "CLid" : 618,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 157,
+    "CLid" : 618,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 158,
+    "CLid" : 622,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 159,
+    "CLid" : 622,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 160,
+    "CLid" : 622,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 161,
+    "CLid" : 622,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 162,
+    "CLid" : 1134,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 163,
+    "CLid" : 1134,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 164,
+    "CLid" : 1134,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 165,
+    "CLid" : 1134,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 166,
+    "CLid" : 1135,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 167,
+    "CLid" : 1135,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 168,
+    "CLid" : 1135,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 169,
+    "CLid" : 1135,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 170,
+    "CLid" : 624,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 171,
+    "CLid" : 624,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 172,
+    "CLid" : 624,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 173,
+    "CLid" : 624,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 174,
+    "CLid" : 626,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 175,
+    "CLid" : 626,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 176,
+    "CLid" : 626,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 177,
+    "CLid" : 626,
+    "timeslot" : null
+  }, {
+    "type" : "fixedTask",
+    "LAid" : 178,
+    "CLid" : 638,
+    "timeslot" : null
+  } ],
+  "timeLineList" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37 ],
+  "score" : null
+}
