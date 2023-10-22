@@ -10,30 +10,34 @@
     </scoreDirectorFactory>
 
     <termination>
-        <secondsSpentLimit>20</secondsSpentLimit>
+        <secondsSpentLimit>120</secondsSpentLimit>
     </termination>
 
     <constructionHeuristic>
         <!--<constructionHeuristicType>FIRST_FIT</constructionHeuristicType>-->
         <queuedEntityPlacer>
-            <entitySelector id="placerEntitySelector">
+            <entitySelector id="placerEntitySelectorGroup">
                 <entityClass>org.opta.groupScheduler.domain.GroupPerCourse</entityClass>
             </entitySelector>
             <changeMoveSelector>
-                <entitySelector mimicSelectorRef="placerEntitySelector"/>
+                <entitySelector mimicSelectorRef="placerEntitySelectorGroup"/>
             </changeMoveSelector>
         </queuedEntityPlacer>
     </constructionHeuristic>
 
     <constructionHeuristic>
-        <!--<constructionHeuristicType>FIRST_FIT</constructionHeuristicType>-->
         <queuedEntityPlacer>
-            <entitySelector id="placerEntitySelector">
+            <entitySelector id="placerEntitySelectorLA">
                 <entityClass>org.opta.groupScheduler.domain.LessonAssignment</entityClass>
+                <cacheType>PHASE</cacheType>
+                <selectionOrder>SORTED</selectionOrder>
+                <sorterManner>DECREASING_DIFFICULTY</sorterManner>
             </entitySelector>
-            <changeMoveSelector>
-                <entitySelector mimicSelectorRef="placerEntitySelector"/>
-            </changeMoveSelector>
+            <unionMoveSelector>
+                <changeMoveSelector>
+                    <entitySelector mimicSelectorRef="placerEntitySelectorLA"/>
+                </changeMoveSelector>
+            </unionMoveSelector>
         </queuedEntityPlacer>
     </constructionHeuristic>
 

@@ -121,11 +121,6 @@ public class UntisTextReader {
                     cl.setClassGroupList(new ArrayList<>(idToClasses.get(id)));
                     courseLevels.add(cl);
                     idToCourseLevel.put(id, cl);
-                    /*
-                    for (ClassGroup classGroup: idToClasses.get(id)){
-                        GroupPerCourse groupPerCourse = new GroupPerCourse(newIndex(indexSingleton),classGroup, cl);
-                        groupPerCourseList.add(groupPerCourse);
-                    }*/
                 }
             } else {
                 List<Integer> idList = topicToIds.get(topic).stream().toList();

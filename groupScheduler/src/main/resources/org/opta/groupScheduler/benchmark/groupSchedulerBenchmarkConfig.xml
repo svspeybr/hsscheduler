@@ -14,15 +14,16 @@
                 <constraintProviderClass>org.opta.groupScheduler.solver.LessonAssignmentConstraintProvider</constraintProviderClass>
             </scoreDirectorFactory>
             <termination>
-                <secondsSpentLimit>5</secondsSpentLimit>
+                <secondsSpentLimit>120</secondsSpentLimit>
             </termination>
         </solver>
         <problemBenchmarks>
             <solutionFileIOClass>org.opta.groupScheduler.fileIO.GroupJacksonSolutionFileIO</solutionFileIOClass>
             <inputSolutionFile>C:\Users\simon\Desktop\Scheduling\hsscheduler\groupScheduler\data\unsolved\fifthYear.json</inputSolutionFile>
-            <inputSolutionFile>C:\Users\simon\Desktop\Scheduling\hsscheduler\groupScheduler\data\unsolved\sixthYear.json</inputSolutionFile>
+            <!--<inputSolutionFile>C:\Users\simon\Desktop\Scheduling\hsscheduler\groupScheduler\data\unsolved\sixthYear.json</inputSolutionFile>
             <inputSolutionFile>C:\Users\simon\Desktop\Scheduling\hsscheduler\groupScheduler\data\unsolved\fourthYear.json</inputSolutionFile>
             <inputSolutionFile>C:\Users\simon\Desktop\Scheduling\hsscheduler\groupScheduler\data\unsolved\thirdYear.json</inputSolutionFile>
+            -->
             <problemStatisticType>BEST_SCORE</problemStatisticType>
         </problemBenchmarks>
     </inheritedSolverBenchmark>
@@ -31,11 +32,7 @@
     <solverBenchmark>
         <name>FIRST_FIT</name>
         <solver>
-            <scoreDirectorFactory>
-                <constraintProviderClass>org.opta.groupScheduler.solver.LessonAssignmentConstraintProvider</constraintProviderClass>
-            </scoreDirectorFactory>
             <constructionHeuristic>
-                <!--<constructionHeuristicType>FIRST_FIT</constructionHeuristicType>-->
                 <queuedEntityPlacer>
                     <entitySelector id="placerEntitySelector">
                         <entityClass>org.opta.groupScheduler.domain.GroupPerCourse</entityClass>
@@ -47,23 +44,31 @@
             </constructionHeuristic>
 
             <constructionHeuristic>
-                <!--<constructionHeuristicType>FIRST_FIT</constructionHeuristicType>-->
                 <queuedEntityPlacer>
                     <entitySelector id="placerEntitySelector">
                         <entityClass>org.opta.groupScheduler.domain.LessonAssignment</entityClass>
+                        <cacheType>PHASE</cacheType>
+                        <selectionOrder>SORTED</selectionOrder>
+                        <sorterManner>DECREASING_DIFFICULTY</sorterManner>
                     </entitySelector>
-                    <changeMoveSelector>
-                        <entitySelector mimicSelectorRef="placerEntitySelector"/>
-                    </changeMoveSelector>
+                    <unionMoveSelector>
+                        <changeMoveSelector>
+                            <entitySelector mimicSelectorRef="placerEntitySelector"/>
+                        </changeMoveSelector>
+                    </unionMoveSelector>
                 </queuedEntityPlacer>
             </constructionHeuristic>
 
+
             <localSearch>
                 <localSearchType>LATE_ACCEPTANCE</localSearchType>
+                <unionMoveSelector>
+                    <changeMoveSelector/>
+                    <swapMoveSelector/>
+                </unionMoveSelector>
             </localSearch>
         </solver>
     </solverBenchmark>
-
 
     <!--
     <solverBenchmark>

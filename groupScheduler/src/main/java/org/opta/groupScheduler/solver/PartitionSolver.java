@@ -1,7 +1,9 @@
 package org.opta.groupScheduler.solver;
 
 import org.opta.groupScheduler.domain.*;
+import org.opta.groupScheduler.fileIO.FTLJacksonSolutionFileIO;
 import org.optaplanner.core.api.score.ScoreExplanation;
+import org.optaplanner.core.api.score.buildin.hardmediumsoft.HardMediumSoftScore;
 import org.optaplanner.core.api.score.buildin.hardsoft.HardSoftScore;
 import org.optaplanner.core.api.score.constraint.ConstraintMatch;
 import org.optaplanner.core.api.score.constraint.ConstraintMatchTotal;
@@ -14,17 +16,11 @@ import org.optaplanner.core.config.solver.SolverManagerConfig;
 
 import java.io.File;
 import java.util.*;
+import java.util.concurrent.ExecutionException;
 
 public class PartitionSolver {
 
     //DATAFETCHING
-    private List<ClassGroup> classGroupList;
-    private List<CourseLevel> courseLevelList;
-    private List<GroupPerCourse> groupPerCourseList;
-    private List<LessonAssignment> lessonAssignmentList;
-
-    private List<Integer> timeLineList;
-
     private GroupScheduleSolution scheduleSolution;
 
     public PartitionSolver(List<ClassGroup> classGroupList,
@@ -32,16 +28,15 @@ public class PartitionSolver {
                            List<GroupPerCourse> groupPerCourseList,
                            List<LessonAssignment> lessonAssignmentList,
                            List<Integer> timeLineList) {
-        this.classGroupList = classGroupList;
-        this.courseLevelList = courseLevelList;
-        this.groupPerCourseList = groupPerCourseList;
-        this.lessonAssignmentList = lessonAssignmentList;
-        this.timeLineList =  timeLineList;
-        this.scheduleSolution = new GroupScheduleSolution(this.classGroupList,
-                this.courseLevelList,
-                this.groupPerCourseList,
-                this.lessonAssignmentList,
-                this.timeLineList);
+        this.scheduleSolution = new GroupScheduleSolution(classGroupList,
+                courseLevelList,
+                groupPerCourseList,
+                lessonAssignmentList,
+                timeLineList);
+    }
+
+    public PartitionSolver(GroupScheduleSolution groupScheduleSolution){
+        this.scheduleSolution = groupScheduleSolution;
     }
 
     public void partition() { //TODO ??READING PARAMETERS ClassGroupList
@@ -136,6 +131,69 @@ public class PartitionSolver {
         return mapByRow;
     }
 
+    public FixedTaskLessonSolution placeTheFixedTaskLessons() throws ExecutionException, InterruptedException {
+        List<CourseLevel> clListFTL = new ArrayList<>(); // CourseLvls for FTLSolution;
+        List<FixedTaskLesson> ftlList = new ArrayList<>(); // assignments for FTLSolution
+
+        for (CourseLevel cl: this.scheduleSolution.getCourseLevelList()){
+            if (cl.getRelatedTaskIds().size() == 1){ //CONSIDER ONLY THE FIXED COMBINATIONS
+                clListFTL.add(cl);
+            }
+        }
+
+        for (LessonAssignment la: this.scheduleSolution.getLessonAssignmentList()){
+            if (la instanceof FixedTaskLesson){
+                ftlList.add((FixedTaskLesson) la); //SHOULD NOT GIVE ERRORS: FTL's have cl's from clListFTL
+            }
+        }
+
+        FixedTaskLessonSolution ftlSolution = new FixedTaskLessonSolution(this.scheduleSolution.getClassGroupList(),
+                clListFTL,
+                ftlList,
+                this.scheduleSolution.getTimeLineList());
+        //updateNumberOfLessons(ftlSolution.getClassGroupList(), ftlSolution.getFixedTaskLessonList()); //DANGER UPDATE CLASSGROUPS
+        for (ClassGroup cl: ftlSolution.getClassGroupList()){
+            System.out.println(cl.getName() +" ofLessonSize: "+ cl.getNumberOfLessons());
+        }
+        final Long SINGLETON_FTL_ID = 2L;
+        // TODO: FROM RESOURCE INSTEAD OF FROM FILE??
+        File file = new File("C:\\Users\\simon\\Desktop\\Scheduling\\hsscheduler\\groupScheduler\\src\\main\\resources\\org\\opta\\groupScheduler\\solver\\ftlSolverConfig.xml");
+        SolverConfig solverConfig = SolverConfig.createFromXmlFile(file);
+        SolverFactory solverFactory = SolverFactory.create(solverConfig);
+        SolverManager<FixedTaskLessonSolution, Long> solverManagerFTL = SolverManager.create(solverConfig, new SolverManagerConfig());
+        SolutionManager<FixedTaskLessonSolution, HardMediumSoftScore> scoreManagerFTL = SolutionManager.create(solverFactory);
+
+        SolverJob<FixedTaskLessonSolution, Long> solverJob = solverManagerFTL.solve(SINGLETON_FTL_ID, ftlSolution);
+        ftlSolution = solverJob.getFinalBestSolution();
+        solverManagerFTL.close();
+
+        Map<Integer, List<ClassGroup>> filled = new HashMap<>();
+        for (FixedTaskLesson ftl: ftlSolution.getFixedTaskLessonList()){
+            Integer timeslot = ftl.getTimeslotLine();
+            if (!filled.containsKey(timeslot)){
+                filled.put(timeslot, new ArrayList<>());
+            }
+            filled.get(timeslot).addAll(ftl.getClassGroupList());
+        }
+
+        Map<ClassGroup, List<Integer>> emptyTimeslots = new HashMap<>();
+        Map<Integer, List<ClassGroup>> gaps = new HashMap<>();
+        for (Integer timeslot: filled.keySet()){
+            List<ClassGroup> complement= new ArrayList<>(ftlSolution.getClassGroupList());
+            complement.removeAll(filled.get(timeslot));
+            gaps.put(timeslot, complement);
+            System.out.println(timeslot + ": " + complement);
+        }
+        return ftlSolution;
+
+    }
+
+    public void placeAndSaveFixedTask(String source, String nameFile) throws ExecutionException, InterruptedException {
+        FixedTaskLessonSolution ftlSolution = placeTheFixedTaskLessons();
+        FTLJacksonSolutionFileIO ioFTL = new FTLJacksonSolutionFileIO();
+        ioFTL.write(ftlSolution, new File(source, nameFile + "FTL_placed.json"));
+    }
+
     public GroupScheduleSolution getScheduleSolution() {
         return scheduleSolution;
     }
@@ -156,6 +214,15 @@ public class PartitionSolver {
         return new ArrayList<>(topicNames);
     }
 
-
+    private void updateNumberOfLessons(List<ClassGroup> classGroupList, List<FixedTaskLesson> ftLessonList){
+        for (ClassGroup clg: classGroupList){
+            clg.setNumberOfLessons(0);
+            for (FixedTaskLesson ftl: ftLessonList){
+                if (ftl.getClassGroupList().contains(clg)){
+                    clg.setNumberOfLessons(clg.getNumberOfLessons()+1);
+                }
+            }
+        }
+    }
 
 }

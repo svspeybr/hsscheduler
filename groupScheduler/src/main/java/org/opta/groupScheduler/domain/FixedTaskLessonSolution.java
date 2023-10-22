@@ -5,33 +5,39 @@ import org.optaplanner.core.api.domain.solution.PlanningScore;
 import org.optaplanner.core.api.domain.solution.PlanningSolution;
 import org.optaplanner.core.api.domain.solution.ProblemFactCollectionProperty;
 import org.optaplanner.core.api.domain.valuerange.ValueRangeProvider;
+import org.optaplanner.core.api.score.buildin.hardmediumsoft.HardMediumSoftScore;
 import org.optaplanner.core.api.score.buildin.hardsoft.HardSoftScore;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @PlanningSolution
-public class GroupScheduleSolution {
+public class FixedTaskLessonSolution {
 
     private List<ClassGroup> classGroupList;
     private List<CourseLevel> courseLevelList;
-    private List<GroupPerCourse> groupPerCourseList;
-
-    private List<LessonAssignment> lessonAssignmentList;
+    private List<FixedTaskLesson> fixedTaskLessonList;
     private List<Integer> timeLineList;
-    private HardSoftScore score;
+    private List<List<FixedTaskLesson>> possibleFullRows;
+    private HardMediumSoftScore score;
 
-    public GroupScheduleSolution(){
+    public FixedTaskLessonSolution(){
     }
-    public GroupScheduleSolution(List<ClassGroup> classGroupList,
-                                 List<CourseLevel> courseLevelList,
-                                 List<GroupPerCourse> groupPerCourseList,
-                                 List<LessonAssignment> lessonAssignmentList,
-                                 List<Integer> timeLineList){
+    public FixedTaskLessonSolution(List<ClassGroup> classGroupList,
+                                   List<CourseLevel> courseLevelList,
+                                   List<FixedTaskLesson> fixedTaskLessonList,
+                                   List<Integer> timeLineList){
         this.classGroupList = classGroupList;
         this.courseLevelList = courseLevelList;
-        this.groupPerCourseList = groupPerCourseList;
-        this.lessonAssignmentList = lessonAssignmentList;
+        this.fixedTaskLessonList = fixedTaskLessonList;
         this.timeLineList = timeLineList;
+        this.possibleFullRows = new ArrayList<>(); //TODO: REMOVE
+    }
+    @ProblemFactCollectionProperty
+    public List<List<FixedTaskLesson>> getPossibleFullRows() {return possibleFullRows;}
+
+    public void setPossibleFullRows(List<List<FixedTaskLesson>> possibleFullRows) {
+        this.possibleFullRows = possibleFullRows;
     }
 
     @ProblemFactCollectionProperty
@@ -45,13 +51,8 @@ public class GroupScheduleSolution {
     }
 
     @PlanningEntityCollectionProperty
-    public List<GroupPerCourse> getGroupPerCourseList() {
-        return groupPerCourseList;
-    }
-
-    @PlanningEntityCollectionProperty
-    public List<LessonAssignment> getLessonAssignmentList() {
-        return lessonAssignmentList;
+    public List<FixedTaskLesson> getFixedTaskLessonList() {
+        return fixedTaskLessonList;
     }
     @ProblemFactCollectionProperty
     @ValueRangeProvider(id= "timeslotRange")
@@ -60,11 +61,11 @@ public class GroupScheduleSolution {
     }
 
     @PlanningScore
-    public HardSoftScore getScore() {
+    public HardMediumSoftScore getScore() {
         return score;
     }
 
-    public void setScore(HardSoftScore score) {
+    public void setScore(HardMediumSoftScore score) {
         this.score = score;
     }
 }

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plannerBenchmark xmlns="https://www.optaplanner.org/xsd/benchmark" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="https://www.optaplanner.org/xsd/benchmark https://www.optaplanner.org/xsd/benchmark/benchmark.xsd">
+    <benchmarkDirectory>groupScheduler/data/benchmarkReport</benchmarkDirectory>
+    <warmUpSecondsSpentLimit>10</warmUpSecondsSpentLimit>
+
+    <inheritedSolverBenchmark>
+        <solver>
+            <solutionClass>org.opta.groupScheduler.domain.FixedTaskLessonSolution</solutionClass>
+            <entityClass>org.opta.groupScheduler.domain.FixedTaskLesson</entityClass>
+            <scoreDirectorFactory>
+                <constraintProviderClass>org.opta.groupScheduler.solver.FixedTaskLessonConstraintProvider</constraintProviderClass>
+            </scoreDirectorFactory>
+            <termination>
+                <secondsSpentLimit>120</secondsSpentLimit>
+            </termination>
+        </solver>
+        <problemBenchmarks>
+            <solutionFileIOClass>org.opta.groupScheduler.fileIO.FTLJacksonSolutionFileIO</solutionFileIOClass>
+            <inputSolutionFile>C:\Users\simon\Desktop\Scheduling\hsscheduler\groupScheduler\data\unsolved\fifthYearFTL.json</inputSolutionFile>
+            <problemStatisticType>BEST_SCORE</problemStatisticType>
+        </problemBenchmarks>
+    </inheritedSolverBenchmark>
+
+    <!--
+    <solverBenchmark>
+        <name>FFD_LATE_ACCEPT_TABU_8_400_8</name>
+        <solver>
+            <constructionHeuristic>
+                <constructionHeuristicType>FIRST_FIT_DECREASING</constructionHeuristicType>
+            </constructionHeuristic>
+            <localSearch>
+                <acceptor>
+                    <entityTabuSize>8</entityTabuSize>
+                    <lateAcceptanceSize>400</lateAcceptanceSize>
+                </acceptor>
+                <forager>
+                    <acceptedCountLimit>8</acceptedCountLimit>
+                </forager>
+            </localSearch>
+        </solver>
+    </solverBenchmark>
+
+    <solverBenchmark>
+        <name>FF_LATE_ACCEPT_TABU_8_400_8</name>
+        <solver>
+            <constructionHeuristic>
+                <constructionHeuristicType>FIRST_FIT</constructionHeuristicType>
+            </constructionHeuristic>
+            <localSearch>
+                <acceptor>
+                    <entityTabuSize>8</entityTabuSize>
+                    <lateAcceptanceSize>400</lateAcceptanceSize>
+                </acceptor>
+                <forager>
+                    <acceptedCountLimit>8</acceptedCountLimit>
+                </forager>
+            </localSearch>
+        </solver>
+    </solverBenchmark>
+
+    <solverBenchmark>
+        <name>FFD_TABU_10_1000</name>
+        <solver>
+            <constructionHeuristic>
+                <constructionHeuristicType>FIRST_FIT_DECREASING</constructionHeuristicType>
+            </constructionHeuristic>
+            <localSearch>
+                <acceptor>
+                    <entityTabuSize>10</entityTabuSize>
+                </acceptor>
+                <forager>
+                    <acceptedCountLimit>1000</acceptedCountLimit>
+                </forager>
+            </localSearch>
+        </solver>
+    </solverBenchmark>
+    -->
+
+    <solverBenchmark>
+        <name>FFD_SIMULATED_ANN</name>
+        <solver>
+            <constructionHeuristic>
+                <constructionHeuristicType>FIRST_FIT_DECREASING</constructionHeuristicType>
+            </constructionHeuristic>
+            <localSearch>
+                <acceptor>
+                    <entityTabuSize>5</entityTabuSize>
+                    <simulatedAnnealingStartingTemperature>2hard/30medium/200000soft</simulatedAnnealingStartingTemperature>
+                </acceptor>
+                <forager>
+                    <acceptedCountLimit>4</acceptedCountLimit>
+                </forager>
+            </localSearch>
+        </solver>
+    </solverBenchmark>
+
+    <solverBenchmark>
+        <name>FFD_SIMULATED_ANN_V2</name>
+        <solver>
+            <constructionHeuristic>
+                <constructionHeuristicType>FIRST_FIT_DECREASING</constructionHeuristicType>
+            </constructionHeuristic>
+            <localSearch>
+                <acceptor>
+                    <entityTabuSize>5</entityTabuSize>
+                    <simulatedAnnealingStartingTemperature>4hard/30medium/200000soft</simulatedAnnealingStartingTemperature>
+                </acceptor>
+                <forager>
+                    <acceptedCountLimit>4</acceptedCountLimit>
+                </forager>
+            </localSearch>
+        </solver>
+    </solverBenchmark>
+
+    <solverBenchmark>
+        <name>FFD_SIMULATED_ANN_V3</name>
+        <solver>
+            <constructionHeuristic>
+                <constructionHeuristicType>FIRST_FIT_DECREASING</constructionHeuristicType>
+            </constructionHeuristic>
+            <localSearch>
+                <acceptor>
+                    <entityTabuSize>5</entityTabuSize>
+                    <simulatedAnnealingStartingTemperature>5hard/40medium/200000soft</simulatedAnnealingStartingTemperature>
+                </acceptor>
+                <forager>
+                    <acceptedCountLimit>4</acceptedCountLimit>
+                </forager>
+            </localSearch>
+        </solver>
+    </solverBenchmark>
+
+
+
+</plannerBenchmark>

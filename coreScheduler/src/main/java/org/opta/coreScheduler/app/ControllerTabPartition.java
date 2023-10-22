@@ -7,6 +7,7 @@ import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Font;
+import org.opta.groupScheduler.fileIO.GroupJacksonSolutionFileIO;
 import org.opta.groupScheduler.fileIO.UntisTextReader;
 import org.opta.groupScheduler.solver.PartitionSolver;
 
@@ -24,8 +25,9 @@ public class ControllerTabPartition {
     private VBox tablePanelRowsPartition;//Container of rows
 
     public void initialize() throws Exception {
-        PartitionSolver partitionSolver = readFile();//FETCH SLOTS,STUDENTGROUPS, ...
-        partitionSolver.partition();//solve
+        GroupJacksonSolutionFileIO io = new GroupJacksonSolutionFileIO();
+        PartitionSolver partitionSolver = io.createGroupSolverFrom("C:\\Users\\simon\\Desktop\\Scheduling\\hsscheduler\\groupScheduler\\data\\unsolved\\fifthYear.json");//FETCH SLOTS,STUDENTGROUPS, ...
+        partitionSolver.partition(); //solve
         Map<Integer, Map<String, List<String>>> mapByRow = partitionSolver.generateMapByRow();
         List<String> columnLabels =  partitionSolver.getGroupNames(); //groupNames for columns
         List<String> colorLabels = partitionSolver.getTopicNames(); //Topics for color

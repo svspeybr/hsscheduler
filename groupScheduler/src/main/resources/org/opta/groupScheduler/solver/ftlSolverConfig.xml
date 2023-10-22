@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<solver>
+    <warmUpSecondsSpentLimit>10</warmUpSecondsSpentLimit>
+
+    <solutionClass>org.opta.groupScheduler.domain.FixedTaskLessonSolution</solutionClass>
+    <entityClass>org.opta.groupScheduler.domain.FixedTaskLesson</entityClass>
+
+    <scoreDirectorFactory>
+        <constraintProviderClass>org.opta.groupScheduler.solver.FixedTaskLessonConstraintProvider</constraintProviderClass>
+    </scoreDirectorFactory>
+
+    <termination>
+        <secondsSpentLimit>120</secondsSpentLimit>
+    </termination>
+
+    <constructionHeuristic>
+        <constructionHeuristicType>FIRST_FIT_DECREASING</constructionHeuristicType>
+    </constructionHeuristic>
+    <localSearch>
+        <acceptor>
+            <entityTabuSize>5</entityTabuSize>
+            <simulatedAnnealingStartingTemperature>2hard/30medium/200000soft</simulatedAnnealingStartingTemperature>
+        </acceptor>
+        <forager>
+            <acceptedCountLimit>4</acceptedCountLimit>
+        </forager>
+    </localSearch>
+
+</solver>
