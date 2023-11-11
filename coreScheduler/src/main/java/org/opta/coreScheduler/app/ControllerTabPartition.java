@@ -25,10 +25,15 @@ public class ControllerTabPartition {
     private VBox tablePanelRowsPartition;//Container of rows
 
     public void initialize() throws Exception {
+        // TODO REMOVE GroupJacksonSolution, GroupPerCourse, GroupScheduleSolution
         GroupJacksonSolutionFileIO io = new GroupJacksonSolutionFileIO();
         PartitionSolver partitionSolver = io.createGroupSolverFrom("C:\\Users\\simon\\Desktop\\Scheduling\\hsscheduler\\groupScheduler\\data\\unsolved\\fifthYear.json");//FETCH SLOTS,STUDENTGROUPS, ...
+        /* TODO CHANGE partitionSolver To Calculate first FTLSolution , then GASolution
         partitionSolver.partition(); //solve
-        Map<Integer, Map<String, List<String>>> mapByRow = partitionSolver.generateMapByRow();
+         */
+        String SOURCE_FTL ="C:\\Users\\simon\\Desktop\\Scheduling\\hsscheduler\\groupScheduler\\data\\unsolved\\fifthYearFTL_placed.json";
+        String SOURCE_GA = "C:\\Users\\simon\\Desktop\\Scheduling\\hsscheduler\\groupScheduler\\data\\unsolved\\fifthYearGA_placed.json";
+        Map<Integer, Map<String, List<String>>> mapByRow = partitionSolver.generateMapByRowFromSource(SOURCE_FTL, SOURCE_GA);
         List<String> columnLabels =  partitionSolver.getGroupNames(); //groupNames for columns
         List<String> colorLabels = partitionSolver.getTopicNames(); //Topics for color
         drawTablePerGroup(mapByRow, columnLabels, colorLabels); //DRAW TABLE for first GRID
@@ -117,8 +122,8 @@ public class ControllerTabPartition {
 
 
     private StackPane makeCard(Region region, double scaleWidth, double scaleHeight, String text, Color fillColor, Color strokeColor) {
-        double containerWidth = region.getPrefWidth() * scaleWidth;
-        double containerHeight = region.getPrefHeight() * scaleHeight;
+        double containerWidth = (region.getPrefWidth() + 5) * scaleWidth;
+        double containerHeight = (region.getPrefHeight() + 1) * scaleHeight;
         StackPane stackPane = new StackPane();
         Rectangle rectangle = new Rectangle();
         rectangle.setFill(fillColor);

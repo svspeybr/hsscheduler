@@ -22,7 +22,7 @@ public abstract class TimetablingBenchmarkApp {
         String SOURCE_TO_INIT = "C:\\Users\\simon\\Desktop\\Scheduling\\hsscheduler\\groupScheduler\\data\\unsolved";
         String SOURCE_CLASSES = "C:\\Users\\simon\\Desktop\\Scheduling\\hsscheduler\\groupScheduler\\data\\untis\\KLASSEN2324.TXT";
         String SOURCE_LESSONS = "C:\\Users\\simon\\Desktop\\Scheduling\\hsscheduler\\groupScheduler\\data\\untis\\LESSON2223.TXT";
-
+        String SOURCE_LESSONS_BEW = "C:\\Users\\simon\\Desktop\\Scheduling\\hsscheduler\\groupScheduler\\data\\untis\\LESSON2324_bew.TXT";
         String test = "test";
         String fileSixthYear = "sixthYear";
         String fileFifthYear = "fifthYear";
@@ -156,12 +156,13 @@ public abstract class TimetablingBenchmarkApp {
             }
             System.out.println();
         }*/
-        /*
+
+/*
         //FETCH DATA
-        File file6 = new File(SOURCE_TO_INIT + "\\"+fileSixthYear +".json");
-        File file5 = new File(SOURCE_TO_INIT + "\\"+fileFifthYear +".json");
-        File file4 = new File(SOURCE_TO_INIT + "\\"+fileFourthYear +".json");
-        File file3 = new File(SOURCE_TO_INIT + "\\"+fileThirdYear +".json");
+        File file6 = new File(SOURCE_TO_INIT + "\\"+fileSixthYear+".json");
+        File file5 = new File(SOURCE_TO_INIT + "\\"+fileFifthYear+".json");
+        File file4 = new File(SOURCE_TO_INIT + "\\"+fileFourthYear+".json");
+        File file3 = new File(SOURCE_TO_INIT + "\\"+fileThirdYear+".json");
         file6.delete();
         file5.delete();
         file4.delete();
@@ -172,19 +173,20 @@ public abstract class TimetablingBenchmarkApp {
         io.write(UntisTextReader.readFromPath(6,
                 new HashSet<>(List.of("LO", "GE", "GO", "ES", "AC")),
                SOURCE_CLASSES,
-                SOURCE_LESSONS).getScheduleSolution(), new File(SOURCE_TO_INIT, fileSixthYear) );
+                SOURCE_LESSONS).getScheduleSolution(), new File(SOURCE_TO_INIT, fileSixthYear +".json") );
         io.write(UntisTextReader.readFromPath(5,
-                new HashSet<>(List.of("LO", "GE", "GO", "ES", "AC")),
+                new HashSet<>(List.of("LO", "GE", "GO", "ES", "AC", "AA", "AA_WE")),
                 SOURCE_CLASSES,
-                SOURCE_LESSONS).getScheduleSolution(), new File(SOURCE_TO_INIT, fileFifthYear) );
+                SOURCE_LESSONS_BEW).getScheduleSolution(), new File(SOURCE_TO_INIT, fileFifthYear +".json") );
+        //TODO: FILTER OUT THE '?' and other unnbecessary courses (if any)
         io.write(UntisTextReader.readFromPath(4,
                 new HashSet<>(List.of("LO", "GE", "GO", "ES", "AC")),
                 SOURCE_CLASSES,
-                SOURCE_LESSONS).getScheduleSolution(), new File(SOURCE_TO_INIT, fileFourthYear) );
+                SOURCE_LESSONS).getScheduleSolution(), new File(SOURCE_TO_INIT, fileFourthYear+".json") );
         io.write(UntisTextReader.readFromPath(3,
                 new HashSet<>(List.of("LO", "GE", "GO", "ES", "AC")),
                 SOURCE_CLASSES,
-                SOURCE_LESSONS).getScheduleSolution(), new File(SOURCE_TO_INIT, fileThirdYear) );
+                SOURCE_LESSONS).getScheduleSolution(), new File(SOURCE_TO_INIT, fileThirdYear+".json") );
         */
 
         /*
@@ -192,11 +194,25 @@ public abstract class TimetablingBenchmarkApp {
         PlannerBenchmark plannerBenchmark = plannerBenchmarkFactory.buildPlannerBenchmark();
         plannerBenchmark.benchmarkAndShowReportInBrowser();
         */
+
         /*
         GroupJacksonSolutionFileIO io = new GroupJacksonSolutionFileIO();
         PartitionSolver partitionSolver = io.createGroupSolverFrom("C:\\Users\\simon\\Desktop\\Scheduling\\hsscheduler\\groupScheduler\\data\\unsolved\\fifthYear.json");
         partitionSolver.placeTheFixedTaskLessons();
-        */
+       */
+
+        PartitionSolver ptSolver = UntisTextReader.readFromPath(5,
+                new HashSet<>(List.of("ES", "AC", "AA", "AA_WE", "DU", "DU_NT","DU_AP", "GE")),
+                SOURCE_CLASSES,
+                SOURCE_LESSONS_BEW);
+        String source = "C:\\Users\\simon\\Desktop\\Scheduling\\hsscheduler\\groupScheduler\\data\\unsolved";
+        String fileName = "fifthYear";
+
+        //ptSolver.generateAndSaveFTLSolution(source, fileName);
+        ptSolver.readGapsFromFTLSolution(source + "\\" + fileName + "FTL_placed.json");
+        //ptSolver.placeGroupsFromFTLSolution(source + "\\" + fileName + "FTL_placed.json");
+        //ptSolver.placeCGAFromFTLSolution(source + "\\" + fileName + "FTL_placed.json");
+        //ptSolver.generateAndSaveGASolution(source+ "\\" + fileName + "FTL_placed.json",source, fileName);
 
 
     }

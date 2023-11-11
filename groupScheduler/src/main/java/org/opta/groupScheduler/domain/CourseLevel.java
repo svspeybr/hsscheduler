@@ -13,6 +13,10 @@ public class CourseLevel {
     @JsonProperty("CLid")
     private Integer id;
 
+    private Integer numberOfAssignments;
+
+    private String teacher;
+
     private List<Integer> relatedTaskIds;
 
     private Integer upperBoundClassSize;
@@ -22,11 +26,13 @@ public class CourseLevel {
     private List<ClassGroup> classGroupList;
 
     public CourseLevel(){}
-    public CourseLevel(Integer id, String topic, List<Integer> relatedTaskIds, Integer upperBoundClassSize) {
+    public CourseLevel(Integer id, String topic, String teacher, List<Integer> relatedTaskIds, Integer upperBoundClassSize, Integer numberOfAssignments) {
         this.id = id;
         this.topic = topic;
+        this.teacher = teacher;
         this.relatedTaskIds = new ArrayList<>(relatedTaskIds);
         this.upperBoundClassSize = upperBoundClassSize;
+        this.numberOfAssignments = numberOfAssignments;
     }
 
     public List<ClassGroup> getClassGroupList() {
@@ -49,6 +55,22 @@ public class CourseLevel {
 
     public String getTopic() {
         return topic;
+    }
+
+    public String getTeacher() {
+        return teacher;
+    }
+
+    public void setTeacher(String teacher) {
+        this.teacher = teacher;
+    }
+
+    public Integer getNumberOfAssignments() {
+        return numberOfAssignments;
+    }
+
+    public void setNumberOfAssignments(Integer numberOfAssignments) {
+        this.numberOfAssignments = numberOfAssignments;
     }
 
     public void setTopic(String topic) {

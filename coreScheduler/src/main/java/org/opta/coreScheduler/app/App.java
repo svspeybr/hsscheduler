@@ -15,7 +15,7 @@ public class App extends Application {
         needs to agree with location (rooted at 'resources') for gui.fxml */
         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("gui.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
-        stage.setTitle("TimeTable Optimization");
+        stage.setTitle("TimeTable Optimisation");
         stage.setScene(scene);
         stage.show();
     }

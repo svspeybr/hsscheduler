@@ -10,12 +10,40 @@
     </scoreDirectorFactory>
 
     <termination>
-        <secondsSpentLimit>120</secondsSpentLimit>
+        <secondsSpentLimit>480</secondsSpentLimit>
     </termination>
 
     <constructionHeuristic>
         <constructionHeuristicType>FIRST_FIT_DECREASING</constructionHeuristicType>
     </constructionHeuristic>
+
+
+    <localSearch>
+        <acceptor>
+            <valueTabuSize>5</valueTabuSize>
+            <stepCountingHillClimbingSize>350</stepCountingHillClimbingSize>
+        </acceptor>
+        <forager>
+            <acceptedCountLimit>1</acceptedCountLimit>
+        </forager>
+    </localSearch>
+    <!--
+    <acceptor>
+                <entityTabuSize>8</entityTabuSize>
+                <stepCountingHillClimbingSize>500</stepCountingHillClimbingSize>
+            </acceptor>
+            <forager>
+                <acceptedCountLimit>4</acceptedCountLimit>
+            </forager>
+    <localSearch>
+        <acceptor>
+            <entityTabuSize>8</entityTabuSize>
+            <stepCountingHillClimbingSize>500</stepCountingHillClimbingSize>
+        </acceptor>
+        <forager>
+            <acceptedCountLimit>1</acceptedCountLimit>
+        </forager>
+    </localSearch>
     <localSearch>
         <acceptor>
             <entityTabuSize>5</entityTabuSize>
@@ -25,5 +53,6 @@
             <acceptedCountLimit>4</acceptedCountLimit>
         </forager>
     </localSearch>
+    -->
 
 </solver>

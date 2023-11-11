@@ -4,11 +4,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.opta.coreScheduler.app.ControllerTabPartition">
+<AnchorPane prefHeight="559.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.opta.coreScheduler.app.ControllerTabPartition">
         <children>
-            <ScrollPane fx:id="tableRegionPartition" prefHeight="600.0" prefWidth="867.0">
+            <ScrollPane fx:id="tableRegionPartition" prefHeight="546.0" prefWidth="801.0">
                 <content>
-                    <VBox fx:id="tablePanelRowsPartition" alignment="CENTER" prefHeight="597.0" prefWidth="865.0" />
+                    <VBox fx:id="tablePanelRowsPartition" alignment="CENTER" prefHeight="543.0" prefWidth="799.0" />
                 </content>
             </ScrollPane>
         </children>

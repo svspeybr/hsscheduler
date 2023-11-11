@@ -1,0 +1,835 @@
+{
+  "classGroupList" : [ {
+    "CGid" : "5 ECMT",
+    "size" : 12,
+    "numberOfLessons" : 32
+  }, {
+    "CGid" : "5 ECWI",
+    "size" : 2,
+    "numberOfLessons" : 32
+  }, {
+    "CGid" : "5 GRLA",
+    "size" : 1,
+    "numberOfLessons" : 32
+  }, {
+    "CGid" : "5 GRWI",
+    "size" : 1,
+    "numberOfLessons" : 33
+  }, {
+    "CGid" : "5 HUM1",
+    "size" : 19,
+    "numberOfLessons" : 32
+  }, {
+    "CGid" : "5 HUM2",
+    "size" : 3,
+    "numberOfLessons" : 32
+  }, {
+    "CGid" : "5 LAMT",
+    "size" : 4,
+    "numberOfLessons" : 32
+  }, {
+    "CGid" : "5 LAWE",
+    "size" : 1,
+    "numberOfLessons" : 33
+  }, {
+    "CGid" : "5 LAWI A",
+    "size" : 2,
+    "numberOfLessons" : 33
+  }, {
+    "CGid" : "5 LAWI B",
+    "size" : 2,
+    "numberOfLessons" : 33
+  }, {
+    "CGid" : "5 MT",
+    "size" : 8,
+    "numberOfLessons" : 32
+  }, {
+    "CGid" : "5 MTWE",
+    "size" : 9,
+    "numberOfLessons" : 32
+  }, {
+    "CGid" : "5 WEWI A",
+    "size" : 13,
+    "numberOfLessons" : 32
+  }, {
+    "CGid" : "5 WEWI B",
+    "size" : 3,
+    "numberOfLessons" : 32
+  } ],
+  "courseLevelList" : [ {
+    "CLid" : 1315,
+    "numberOfAssignments" : 2,
+    "teacher" : "RVN",
+    "relatedTaskIds" : [ 1315, 1703, 670 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "DU",
+    "classGroupList" : [ "5 MT", "5 MTWE", "5 ECMT", "5 LAMT" ]
+  }, {
+    "CLid" : 1703,
+    "numberOfAssignments" : 1,
+    "teacher" : "RVN",
+    "relatedTaskIds" : [ 1315, 1703, 670 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "DU",
+    "classGroupList" : [ "5 MT", "5 MTWE", "5 ECMT", "5 LAMT" ]
+  }, {
+    "CLid" : 670,
+    "numberOfAssignments" : 2,
+    "teacher" : "RVN",
+    "relatedTaskIds" : [ 1315, 1703, 670 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "DU",
+    "classGroupList" : [ "5 MT", "5 MTWE", "5 ECMT", "5 LAMT" ]
+  }, {
+    "CLid" : 721,
+    "numberOfAssignments" : 1,
+    "teacher" : "RVN",
+    "relatedTaskIds" : [ 721, 706, 685 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "DU_NT",
+    "classGroupList" : [ "5 GRWI", "5 WEWI A", "5 GRLA", "5 HUM1", "5 LAWE", "5 LAWI A", "5 ECWI", "5 HUM2" ]
+  }, {
+    "CLid" : 706,
+    "numberOfAssignments" : 1,
+    "teacher" : "LWI",
+    "relatedTaskIds" : [ 721, 706, 685 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "DU_NT",
+    "classGroupList" : [ "5 GRWI", "5 WEWI A", "5 GRLA", "5 HUM1", "5 LAWE", "5 LAWI A", "5 ECWI", "5 HUM2" ]
+  }, {
+    "CLid" : 685,
+    "numberOfAssignments" : 1,
+    "teacher" : "RVN",
+    "relatedTaskIds" : [ 721, 706, 685 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "DU_NT",
+    "classGroupList" : [ "5 GRWI", "5 WEWI A", "5 GRLA", "5 HUM1", "5 LAWE", "5 LAWI A", "5 ECWI", "5 HUM2" ]
+  }, {
+    "CLid" : 675,
+    "numberOfAssignments" : 2,
+    "teacher" : "TEE",
+    "relatedTaskIds" : [ 675, 727, 1706, 1485 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "GE",
+    "classGroupList" : [ "5 WEWI A", "5 LAWI B", "5 GRLA", "5 HUM1", "5 LAWE", "5 LAWI A", "5 HUM2", "5 GRWI", "5 MT", "5 MTWE", "5 ECMT", "5 ECWI", "5 LAMT", "5 WEWI B" ]
+  }, {
+    "CLid" : 727,
+    "numberOfAssignments" : 2,
+    "teacher" : "KLA",
+    "relatedTaskIds" : [ 675, 727, 1706, 1485 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "GE",
+    "classGroupList" : [ "5 WEWI A", "5 LAWI B", "5 GRLA", "5 HUM1", "5 LAWE", "5 LAWI A", "5 HUM2", "5 GRWI", "5 MT", "5 MTWE", "5 ECMT", "5 ECWI", "5 LAMT", "5 WEWI B" ]
+  }, {
+    "CLid" : 1706,
+    "numberOfAssignments" : 2,
+    "teacher" : "KLA",
+    "relatedTaskIds" : [ 675, 727, 1706, 1485 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "GE",
+    "classGroupList" : [ "5 WEWI A", "5 LAWI B", "5 GRLA", "5 HUM1", "5 LAWE", "5 LAWI A", "5 HUM2", "5 GRWI", "5 MT", "5 MTWE", "5 ECMT", "5 ECWI", "5 LAMT", "5 WEWI B" ]
+  }, {
+    "CLid" : 1485,
+    "numberOfAssignments" : 2,
+    "teacher" : "KLA",
+    "relatedTaskIds" : [ 675, 727, 1706, 1485 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "GE",
+    "classGroupList" : [ "5 WEWI A", "5 LAWI B", "5 GRLA", "5 HUM1", "5 LAWE", "5 LAWI A", "5 HUM2", "5 GRWI", "5 MT", "5 MTWE", "5 ECMT", "5 ECWI", "5 LAMT", "5 WEWI B" ]
+  }, {
+    "CLid" : 1490,
+    "numberOfAssignments" : 1,
+    "teacher" : "JPY",
+    "relatedTaskIds" : [ 1490, 1699, 709 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "AA",
+    "classGroupList" : [ "5 GRWI", "5 LAWI B", "5 GRLA", "5 MT", "5 HUM1", "5 ECMT", "5 LAWI A", "5 ECWI", "5 LAMT", "5 HUM2" ]
+  }, {
+    "CLid" : 1699,
+    "numberOfAssignments" : 1,
+    "teacher" : "JPY",
+    "relatedTaskIds" : [ 1490, 1699, 709 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "AA",
+    "classGroupList" : [ "5 GRWI", "5 LAWI B", "5 GRLA", "5 MT", "5 HUM1", "5 ECMT", "5 LAWI A", "5 ECWI", "5 LAMT", "5 HUM2" ]
+  }, {
+    "CLid" : 709,
+    "numberOfAssignments" : 1,
+    "teacher" : "JPY",
+    "relatedTaskIds" : [ 1490, 1699, 709 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "AA",
+    "classGroupList" : [ "5 GRWI", "5 LAWI B", "5 GRLA", "5 MT", "5 HUM1", "5 ECMT", "5 LAWI A", "5 ECWI", "5 LAMT", "5 HUM2" ]
+  }, {
+    "CLid" : 1731,
+    "numberOfAssignments" : 1,
+    "teacher" : "GWA",
+    "relatedTaskIds" : [ 1731, 1492, 679, 731, 1708 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "AC",
+    "classGroupList" : [ "5 WEWI A", "5 LAWI B", "5 GRLA", "5 HUM1", "5 LAWE", "5 LAWI A", "5 HUM2", "5 GRWI", "5 MT", "5 MTWE", "5 ECMT", "5 ECWI", "5 LAMT", "5 WEWI B" ]
+  }, {
+    "CLid" : 1492,
+    "numberOfAssignments" : 1,
+    "teacher" : "DVB",
+    "relatedTaskIds" : [ 1731, 1492, 679, 731, 1708 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "AC",
+    "classGroupList" : [ "5 WEWI A", "5 LAWI B", "5 GRLA", "5 HUM1", "5 LAWE", "5 LAWI A", "5 HUM2", "5 GRWI", "5 MT", "5 MTWE", "5 ECMT", "5 ECWI", "5 LAMT", "5 WEWI B" ]
+  }, {
+    "CLid" : 679,
+    "numberOfAssignments" : 1,
+    "teacher" : "GWA",
+    "relatedTaskIds" : [ 1731, 1492, 679, 731, 1708 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "AC",
+    "classGroupList" : [ "5 WEWI A", "5 LAWI B", "5 GRLA", "5 HUM1", "5 LAWE", "5 LAWI A", "5 HUM2", "5 GRWI", "5 MT", "5 MTWE", "5 ECMT", "5 ECWI", "5 LAMT", "5 WEWI B" ]
+  }, {
+    "CLid" : 731,
+    "numberOfAssignments" : 1,
+    "teacher" : "DVB",
+    "relatedTaskIds" : [ 1731, 1492, 679, 731, 1708 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "AC",
+    "classGroupList" : [ "5 WEWI A", "5 LAWI B", "5 GRLA", "5 HUM1", "5 LAWE", "5 LAWI A", "5 HUM2", "5 GRWI", "5 MT", "5 MTWE", "5 ECMT", "5 ECWI", "5 LAMT", "5 WEWI B" ]
+  }, {
+    "CLid" : 1708,
+    "numberOfAssignments" : 1,
+    "teacher" : "GWA",
+    "relatedTaskIds" : [ 1731, 1492, 679, 731, 1708 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "AC",
+    "classGroupList" : [ "5 WEWI A", "5 LAWI B", "5 GRLA", "5 HUM1", "5 LAWE", "5 LAWI A", "5 HUM2", "5 GRWI", "5 MT", "5 MTWE", "5 ECMT", "5 ECWI", "5 LAMT", "5 WEWI B" ]
+  }, {
+    "CLid" : 1733,
+    "numberOfAssignments" : 1,
+    "teacher" : "AKE",
+    "relatedTaskIds" : [ 1733, 695, 1496, 1534 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "ES",
+    "classGroupList" : [ "5 WEWI A", "5 GRWI", "5 GRLA", "5 MTWE", "5 MT", "5 ECMT", "5 LAWE", "5 LAWI A", "5 ECWI", "5 LAMT", "5 WEWI B" ]
+  }, {
+    "CLid" : 695,
+    "numberOfAssignments" : 1,
+    "teacher" : "AKE",
+    "relatedTaskIds" : [ 1733, 695, 1496, 1534 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "ES",
+    "classGroupList" : [ "5 WEWI A", "5 GRWI", "5 GRLA", "5 MTWE", "5 MT", "5 ECMT", "5 LAWE", "5 LAWI A", "5 ECWI", "5 LAMT", "5 WEWI B" ]
+  }, {
+    "CLid" : 1496,
+    "numberOfAssignments" : 1,
+    "teacher" : "AKE",
+    "relatedTaskIds" : [ 1733, 695, 1496, 1534 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "ES",
+    "classGroupList" : [ "5 WEWI A", "5 GRWI", "5 GRLA", "5 MTWE", "5 MT", "5 ECMT", "5 LAWE", "5 LAWI A", "5 ECWI", "5 LAMT", "5 WEWI B" ]
+  }, {
+    "CLid" : 1534,
+    "numberOfAssignments" : 1,
+    "teacher" : "AKE",
+    "relatedTaskIds" : [ 1733, 695, 1496, 1534 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "ES",
+    "classGroupList" : [ "5 WEWI A", "5 GRWI", "5 GRLA", "5 MTWE", "5 MT", "5 ECMT", "5 LAWE", "5 LAWI A", "5 ECWI", "5 LAMT", "5 WEWI B" ]
+  }, {
+    "CLid" : 1714,
+    "numberOfAssignments" : 1,
+    "teacher" : "JPY",
+    "relatedTaskIds" : [ 1714, 1305 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "AA_WE",
+    "classGroupList" : [ "5 WEWI A", "5 MTWE", "5 LAWE", "5 WEWI B" ]
+  }, {
+    "CLid" : 1305,
+    "numberOfAssignments" : 1,
+    "teacher" : "JPY",
+    "relatedTaskIds" : [ 1714, 1305 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "AA_WE",
+    "classGroupList" : [ "5 WEWI A", "5 MTWE", "5 LAWE", "5 WEWI B" ]
+  } ],
+  "groupAssignmentList" : [ {
+    "GAid" : 2,
+    "CGid" : "5 MT",
+    "CLid" : 670,
+    "allowedTimeslots" : [ 32, 33, 2, 20, 7, 9, 12, 28, 29 ],
+    "timeslot" : 20,
+    "courseTaskId" : 670
+  }, {
+    "GAid" : 3,
+    "CGid" : "5 MT",
+    "CLid" : 670,
+    "allowedTimeslots" : [ 32, 33, 2, 20, 7, 9, 12, 28, 29 ],
+    "timeslot" : 29,
+    "courseTaskId" : 670
+  }, {
+    "GAid" : 4,
+    "CGid" : "5 MTWE",
+    "CLid" : 670,
+    "allowedTimeslots" : [ 33, 2, 6, 7, 9, 12, 28, 31 ],
+    "timeslot" : 12,
+    "courseTaskId" : 1703
+  }, {
+    "GAid" : 5,
+    "CGid" : "5 MTWE",
+    "CLid" : 670,
+    "allowedTimeslots" : [ 33, 2, 6, 7, 9, 12, 28, 31 ],
+    "timeslot" : 6,
+    "courseTaskId" : 1703
+  }, {
+    "GAid" : 6,
+    "CGid" : "5 ECMT",
+    "CLid" : 670,
+    "allowedTimeslots" : [ 1, 33, 2, 20, 7, 24, 9, 28 ],
+    "timeslot" : 1,
+    "courseTaskId" : 1315
+  }, {
+    "GAid" : 7,
+    "CGid" : "5 ECMT",
+    "CLid" : 670,
+    "allowedTimeslots" : [ 1, 33, 2, 20, 7, 24, 9, 28 ],
+    "timeslot" : 33,
+    "courseTaskId" : 1315
+  }, {
+    "GAid" : 8,
+    "CGid" : "5 LAMT",
+    "CLid" : 670,
+    "allowedTimeslots" : [ 33, 2, 20, 7, 9, 12, 28, 29 ],
+    "timeslot" : 20,
+    "courseTaskId" : 670
+  }, {
+    "GAid" : 9,
+    "CGid" : "5 LAMT",
+    "CLid" : 670,
+    "allowedTimeslots" : [ 33, 2, 20, 7, 9, 12, 28, 29 ],
+    "timeslot" : 29,
+    "courseTaskId" : 670
+  }, {
+    "GAid" : 10,
+    "CGid" : "5 GRWI",
+    "CLid" : 685,
+    "allowedTimeslots" : [ 32, 33, 2, 9, 28, 29 ],
+    "timeslot" : 9,
+    "courseTaskId" : 721
+  }, {
+    "GAid" : 11,
+    "CGid" : "5 WEWI A",
+    "CLid" : 685,
+    "allowedTimeslots" : [ 33, 2, 18, 9, 25, 11, 28 ],
+    "timeslot" : 18,
+    "courseTaskId" : 706
+  }, {
+    "GAid" : 12,
+    "CGid" : "5 GRLA",
+    "CLid" : 685,
+    "allowedTimeslots" : [ 33, 2, 20, 7, 24, 9, 28 ],
+    "timeslot" : 28,
+    "courseTaskId" : 685
+  }, {
+    "GAid" : 13,
+    "CGid" : "5 HUM1",
+    "CLid" : 685,
+    "allowedTimeslots" : [ 33, 2, 9, 25, 28, 29 ],
+    "timeslot" : 28,
+    "courseTaskId" : 685
+  }, {
+    "GAid" : 14,
+    "CGid" : "5 LAWE",
+    "CLid" : 685,
+    "allowedTimeslots" : [ 33, 2, 7, 9, 25, 28 ],
+    "timeslot" : 28,
+    "courseTaskId" : 685
+  }, {
+    "GAid" : 15,
+    "CGid" : "5 LAWI A",
+    "CLid" : 685,
+    "allowedTimeslots" : [ 33, 2, 9, 25, 11, 28 ],
+    "timeslot" : 28,
+    "courseTaskId" : 685
+  }, {
+    "GAid" : 16,
+    "CGid" : "5 ECWI",
+    "CLid" : 685,
+    "allowedTimeslots" : [ 33, 2, 18, 9, 25, 28, 29 ],
+    "timeslot" : 28,
+    "courseTaskId" : 685
+  }, {
+    "GAid" : 17,
+    "CGid" : "5 HUM2",
+    "CLid" : 685,
+    "allowedTimeslots" : [ 33, 2, 18, 9, 25, 28 ],
+    "timeslot" : 18,
+    "courseTaskId" : 706
+  }, {
+    "GAid" : 18,
+    "CGid" : "5 WEWI A",
+    "CLid" : 1485,
+    "allowedTimeslots" : [ 33, 2, 18, 9, 25, 11, 28 ],
+    "timeslot" : 28,
+    "courseTaskId" : 675
+  }, {
+    "GAid" : 19,
+    "CGid" : "5 WEWI A",
+    "CLid" : 1485,
+    "allowedTimeslots" : [ 33, 2, 18, 9, 25, 11, 28 ],
+    "timeslot" : 33,
+    "courseTaskId" : 675
+  }, {
+    "GAid" : 20,
+    "CGid" : "5 LAWI B",
+    "CLid" : 1485,
+    "allowedTimeslots" : [ 33, 2, 9, 28 ],
+    "timeslot" : 33,
+    "courseTaskId" : 675
+  }, {
+    "GAid" : 21,
+    "CGid" : "5 LAWI B",
+    "CLid" : 1485,
+    "allowedTimeslots" : [ 33, 2, 9, 28 ],
+    "timeslot" : 28,
+    "courseTaskId" : 675
+  }, {
+    "GAid" : 22,
+    "CGid" : "5 GRLA",
+    "CLid" : 1485,
+    "allowedTimeslots" : [ 33, 2, 20, 7, 24, 9, 28 ],
+    "timeslot" : 20,
+    "courseTaskId" : 1485
+  }, {
+    "GAid" : 23,
+    "CGid" : "5 GRLA",
+    "CLid" : 1485,
+    "allowedTimeslots" : [ 33, 2, 20, 7, 24, 9, 28 ],
+    "timeslot" : 24,
+    "courseTaskId" : 1485
+  }, {
+    "GAid" : 24,
+    "CGid" : "5 HUM1",
+    "CLid" : 1485,
+    "allowedTimeslots" : [ 33, 2, 9, 25, 28, 29 ],
+    "timeslot" : 2,
+    "courseTaskId" : 727
+  }, {
+    "GAid" : 25,
+    "CGid" : "5 HUM1",
+    "CLid" : 1485,
+    "allowedTimeslots" : [ 33, 2, 9, 25, 28, 29 ],
+    "timeslot" : 25,
+    "courseTaskId" : 727
+  }, {
+    "GAid" : 26,
+    "CGid" : "5 LAWE",
+    "CLid" : 1485,
+    "allowedTimeslots" : [ 33, 2, 7, 9, 25, 28 ],
+    "timeslot" : 2,
+    "courseTaskId" : 727
+  }, {
+    "GAid" : 27,
+    "CGid" : "5 LAWE",
+    "CLid" : 1485,
+    "allowedTimeslots" : [ 33, 2, 7, 9, 25, 28 ],
+    "timeslot" : 25,
+    "courseTaskId" : 727
+  }, {
+    "GAid" : 28,
+    "CGid" : "5 LAWI A",
+    "CLid" : 1485,
+    "allowedTimeslots" : [ 33, 2, 9, 25, 11, 28 ],
+    "timeslot" : 2,
+    "courseTaskId" : 727
+  }, {
+    "GAid" : 29,
+    "CGid" : "5 LAWI A",
+    "CLid" : 1485,
+    "allowedTimeslots" : [ 33, 2, 9, 25, 11, 28 ],
+    "timeslot" : 25,
+    "courseTaskId" : 727
+  }, {
+    "GAid" : 30,
+    "CGid" : "5 HUM2",
+    "CLid" : 1485,
+    "allowedTimeslots" : [ 33, 2, 18, 9, 25, 28 ],
+    "timeslot" : 33,
+    "courseTaskId" : 675
+  }, {
+    "GAid" : 31,
+    "CGid" : "5 HUM2",
+    "CLid" : 1485,
+    "allowedTimeslots" : [ 33, 2, 18, 9, 25, 28 ],
+    "timeslot" : 28,
+    "courseTaskId" : 675
+  }, {
+    "GAid" : 32,
+    "CGid" : "5 GRWI",
+    "CLid" : 1485,
+    "allowedTimeslots" : [ 32, 33, 2, 9, 28, 29 ],
+    "timeslot" : 33,
+    "courseTaskId" : 675
+  }, {
+    "GAid" : 33,
+    "CGid" : "5 GRWI",
+    "CLid" : 1485,
+    "allowedTimeslots" : [ 32, 33, 2, 9, 28, 29 ],
+    "timeslot" : 28,
+    "courseTaskId" : 675
+  }, {
+    "GAid" : 34,
+    "CGid" : "5 MT",
+    "CLid" : 1485,
+    "allowedTimeslots" : [ 32, 33, 2, 20, 7, 9, 12, 28, 29 ],
+    "timeslot" : 9,
+    "courseTaskId" : 1706
+  }, {
+    "GAid" : 35,
+    "CGid" : "5 MT",
+    "CLid" : 1485,
+    "allowedTimeslots" : [ 32, 33, 2, 20, 7, 9, 12, 28, 29 ],
+    "timeslot" : 7,
+    "courseTaskId" : 1706
+  }, {
+    "GAid" : 36,
+    "CGid" : "5 MTWE",
+    "CLid" : 1485,
+    "allowedTimeslots" : [ 33, 2, 6, 7, 9, 12, 28, 31 ],
+    "timeslot" : 7,
+    "courseTaskId" : 1706
+  }, {
+    "GAid" : 37,
+    "CGid" : "5 MTWE",
+    "CLid" : 1485,
+    "allowedTimeslots" : [ 33, 2, 6, 7, 9, 12, 28, 31 ],
+    "timeslot" : 9,
+    "courseTaskId" : 1706
+  }, {
+    "GAid" : 38,
+    "CGid" : "5 ECMT",
+    "CLid" : 1485,
+    "allowedTimeslots" : [ 1, 33, 2, 20, 7, 24, 9, 28 ],
+    "timeslot" : 20,
+    "courseTaskId" : 1485
+  }, {
+    "GAid" : 39,
+    "CGid" : "5 ECMT",
+    "CLid" : 1485,
+    "allowedTimeslots" : [ 1, 33, 2, 20, 7, 24, 9, 28 ],
+    "timeslot" : 24,
+    "courseTaskId" : 1485
+  }, {
+    "GAid" : 40,
+    "CGid" : "5 ECWI",
+    "CLid" : 1485,
+    "allowedTimeslots" : [ 33, 2, 18, 9, 25, 28, 29 ],
+    "timeslot" : 25,
+    "courseTaskId" : 727
+  }, {
+    "GAid" : 41,
+    "CGid" : "5 ECWI",
+    "CLid" : 1485,
+    "allowedTimeslots" : [ 33, 2, 18, 9, 25, 28, 29 ],
+    "timeslot" : 2,
+    "courseTaskId" : 727
+  }, {
+    "GAid" : 42,
+    "CGid" : "5 LAMT",
+    "CLid" : 1485,
+    "allowedTimeslots" : [ 33, 2, 20, 7, 9, 12, 28, 29 ],
+    "timeslot" : 7,
+    "courseTaskId" : 1706
+  }, {
+    "GAid" : 43,
+    "CGid" : "5 LAMT",
+    "CLid" : 1485,
+    "allowedTimeslots" : [ 33, 2, 20, 7, 9, 12, 28, 29 ],
+    "timeslot" : 9,
+    "courseTaskId" : 1706
+  }, {
+    "GAid" : 44,
+    "CGid" : "5 WEWI B",
+    "CLid" : 1485,
+    "allowedTimeslots" : [ 33, 2, 9, 12, 28, 31 ],
+    "timeslot" : 33,
+    "courseTaskId" : 675
+  }, {
+    "GAid" : 45,
+    "CGid" : "5 WEWI B",
+    "CLid" : 1485,
+    "allowedTimeslots" : [ 33, 2, 9, 12, 28, 31 ],
+    "timeslot" : 28,
+    "courseTaskId" : 675
+  }, {
+    "GAid" : 46,
+    "CGid" : "5 GRWI",
+    "CLid" : 709,
+    "allowedTimeslots" : [ 32, 33, 2, 9, 28, 29 ],
+    "timeslot" : 32,
+    "courseTaskId" : 1490
+  }, {
+    "GAid" : 47,
+    "CGid" : "5 LAWI B",
+    "CLid" : 709,
+    "allowedTimeslots" : [ 33, 2, 9, 28 ],
+    "timeslot" : 2,
+    "courseTaskId" : 1699
+  }, {
+    "GAid" : 48,
+    "CGid" : "5 GRLA",
+    "CLid" : 709,
+    "allowedTimeslots" : [ 33, 2, 20, 7, 24, 9, 28 ],
+    "timeslot" : 33,
+    "courseTaskId" : 709
+  }, {
+    "GAid" : 49,
+    "CGid" : "5 MT",
+    "CLid" : 709,
+    "allowedTimeslots" : [ 32, 33, 2, 20, 7, 9, 12, 28, 29 ],
+    "timeslot" : 32,
+    "courseTaskId" : 1490
+  }, {
+    "GAid" : 50,
+    "CGid" : "5 HUM1",
+    "CLid" : 709,
+    "allowedTimeslots" : [ 33, 2, 9, 25, 28, 29 ],
+    "timeslot" : 33,
+    "courseTaskId" : 709
+  }, {
+    "GAid" : 51,
+    "CGid" : "5 ECMT",
+    "CLid" : 709,
+    "allowedTimeslots" : [ 1, 33, 2, 20, 7, 24, 9, 28 ],
+    "timeslot" : 2,
+    "courseTaskId" : 1699
+  }, {
+    "GAid" : 52,
+    "CGid" : "5 LAWI A",
+    "CLid" : 709,
+    "allowedTimeslots" : [ 33, 2, 9, 25, 11, 28 ],
+    "timeslot" : 33,
+    "courseTaskId" : 709
+  }, {
+    "GAid" : 53,
+    "CGid" : "5 ECWI",
+    "CLid" : 709,
+    "allowedTimeslots" : [ 33, 2, 18, 9, 25, 28, 29 ],
+    "timeslot" : 33,
+    "courseTaskId" : 709
+  }, {
+    "GAid" : 54,
+    "CGid" : "5 LAMT",
+    "CLid" : 709,
+    "allowedTimeslots" : [ 33, 2, 20, 7, 9, 12, 28, 29 ],
+    "timeslot" : 2,
+    "courseTaskId" : 1699
+  }, {
+    "GAid" : 55,
+    "CGid" : "5 HUM2",
+    "CLid" : 709,
+    "allowedTimeslots" : [ 33, 2, 18, 9, 25, 28 ],
+    "timeslot" : 2,
+    "courseTaskId" : 1699
+  }, {
+    "GAid" : 56,
+    "CGid" : "5 WEWI A",
+    "CLid" : 1708,
+    "allowedTimeslots" : [ 33, 2, 18, 9, 25, 11, 28 ],
+    "timeslot" : 25,
+    "courseTaskId" : 1492
+  }, {
+    "GAid" : 57,
+    "CGid" : "5 LAWI B",
+    "CLid" : 1708,
+    "allowedTimeslots" : [ 33, 2, 9, 28 ],
+    "timeslot" : 9,
+    "courseTaskId" : 1708
+  }, {
+    "GAid" : 58,
+    "CGid" : "5 GRLA",
+    "CLid" : 1708,
+    "allowedTimeslots" : [ 33, 2, 20, 7, 24, 9, 28 ],
+    "timeslot" : 7,
+    "courseTaskId" : 679
+  }, {
+    "GAid" : 59,
+    "CGid" : "5 HUM1",
+    "CLid" : 1708,
+    "allowedTimeslots" : [ 33, 2, 9, 25, 28, 29 ],
+    "timeslot" : 9,
+    "courseTaskId" : 1708
+  }, {
+    "GAid" : 60,
+    "CGid" : "5 LAWE",
+    "CLid" : 1708,
+    "allowedTimeslots" : [ 33, 2, 7, 9, 25, 28 ],
+    "timeslot" : 7,
+    "courseTaskId" : 679
+  }, {
+    "GAid" : 61,
+    "CGid" : "5 LAWI A",
+    "CLid" : 1708,
+    "allowedTimeslots" : [ 33, 2, 9, 25, 11, 28 ],
+    "timeslot" : 9,
+    "courseTaskId" : 1708
+  }, {
+    "GAid" : 62,
+    "CGid" : "5 HUM2",
+    "CLid" : 1708,
+    "allowedTimeslots" : [ 33, 2, 18, 9, 25, 28 ],
+    "timeslot" : 25,
+    "courseTaskId" : 1492
+  }, {
+    "GAid" : 63,
+    "CGid" : "5 GRWI",
+    "CLid" : 1708,
+    "allowedTimeslots" : [ 32, 33, 2, 9, 28, 29 ],
+    "timeslot" : 2,
+    "courseTaskId" : 731
+  }, {
+    "GAid" : 64,
+    "CGid" : "5 MT",
+    "CLid" : 1708,
+    "allowedTimeslots" : [ 32, 33, 2, 20, 7, 9, 12, 28, 29 ],
+    "timeslot" : 2,
+    "courseTaskId" : 731
+  }, {
+    "GAid" : 65,
+    "CGid" : "5 MTWE",
+    "CLid" : 1708,
+    "allowedTimeslots" : [ 33, 2, 6, 7, 9, 12, 28, 31 ],
+    "timeslot" : 2,
+    "courseTaskId" : 731
+  }, {
+    "GAid" : 66,
+    "CGid" : "5 ECMT",
+    "CLid" : 1708,
+    "allowedTimeslots" : [ 1, 33, 2, 20, 7, 24, 9, 28 ],
+    "timeslot" : 7,
+    "courseTaskId" : 679
+  }, {
+    "GAid" : 67,
+    "CGid" : "5 ECWI",
+    "CLid" : 1708,
+    "allowedTimeslots" : [ 33, 2, 18, 9, 25, 28, 29 ],
+    "timeslot" : 9,
+    "courseTaskId" : 1708
+  }, {
+    "GAid" : 68,
+    "CGid" : "5 LAMT",
+    "CLid" : 1708,
+    "allowedTimeslots" : [ 33, 2, 20, 7, 9, 12, 28, 29 ],
+    "timeslot" : 12,
+    "courseTaskId" : 1731
+  }, {
+    "GAid" : 69,
+    "CGid" : "5 WEWI B",
+    "CLid" : 1708,
+    "allowedTimeslots" : [ 33, 2, 9, 12, 28, 31 ],
+    "timeslot" : 12,
+    "courseTaskId" : 1731
+  }, {
+    "GAid" : 70,
+    "CGid" : "5 WEWI A",
+    "CLid" : 1534,
+    "allowedTimeslots" : [ 33, 2, 18, 9, 25, 11, 28 ],
+    "timeslot" : 11,
+    "courseTaskId" : 1496
+  }, {
+    "GAid" : 71,
+    "CGid" : "5 GRWI",
+    "CLid" : 1534,
+    "allowedTimeslots" : [ 32, 33, 2, 9, 28, 29 ],
+    "timeslot" : 29,
+    "courseTaskId" : 695
+  }, {
+    "GAid" : 72,
+    "CGid" : "5 GRLA",
+    "CLid" : 1534,
+    "allowedTimeslots" : [ 33, 2, 20, 7, 24, 9, 28 ],
+    "timeslot" : 9,
+    "courseTaskId" : 1534
+  }, {
+    "GAid" : 73,
+    "CGid" : "5 MTWE",
+    "CLid" : 1534,
+    "allowedTimeslots" : [ 33, 2, 6, 7, 9, 12, 28, 31 ],
+    "timeslot" : 33,
+    "courseTaskId" : 1733
+  }, {
+    "GAid" : 74,
+    "CGid" : "5 MT",
+    "CLid" : 1534,
+    "allowedTimeslots" : [ 32, 33, 2, 20, 7, 9, 12, 28, 29 ],
+    "timeslot" : 33,
+    "courseTaskId" : 1733
+  }, {
+    "GAid" : 75,
+    "CGid" : "5 ECMT",
+    "CLid" : 1534,
+    "allowedTimeslots" : [ 1, 33, 2, 20, 7, 24, 9, 28 ],
+    "timeslot" : 9,
+    "courseTaskId" : 1534
+  }, {
+    "GAid" : 76,
+    "CGid" : "5 LAWE",
+    "CLid" : 1534,
+    "allowedTimeslots" : [ 33, 2, 7, 9, 25, 28 ],
+    "timeslot" : 33,
+    "courseTaskId" : 1733
+  }, {
+    "GAid" : 77,
+    "CGid" : "5 LAWI A",
+    "CLid" : 1534,
+    "allowedTimeslots" : [ 33, 2, 9, 25, 11, 28 ],
+    "timeslot" : 11,
+    "courseTaskId" : 1496
+  }, {
+    "GAid" : 78,
+    "CGid" : "5 ECWI",
+    "CLid" : 1534,
+    "allowedTimeslots" : [ 33, 2, 18, 9, 25, 28, 29 ],
+    "timeslot" : 29,
+    "courseTaskId" : 695
+  }, {
+    "GAid" : 79,
+    "CGid" : "5 LAMT",
+    "CLid" : 1534,
+    "allowedTimeslots" : [ 33, 2, 20, 7, 9, 12, 28, 29 ],
+    "timeslot" : 33,
+    "courseTaskId" : 1733
+  }, {
+    "GAid" : 80,
+    "CGid" : "5 WEWI B",
+    "CLid" : 1534,
+    "allowedTimeslots" : [ 33, 2, 9, 12, 28, 31 ],
+    "timeslot" : 9,
+    "courseTaskId" : 1534
+  }, {
+    "GAid" : 81,
+    "CGid" : "5 WEWI A",
+    "CLid" : 1305,
+    "allowedTimeslots" : [ 33, 2, 18, 9, 25, 11, 28 ],
+    "timeslot" : 9,
+    "courseTaskId" : 1305
+  }, {
+    "GAid" : 82,
+    "CGid" : "5 MTWE",
+    "CLid" : 1305,
+    "allowedTimeslots" : [ 33, 2, 6, 7, 9, 12, 28, 31 ],
+    "timeslot" : 31,
+    "courseTaskId" : 1714
+  }, {
+    "GAid" : 83,
+    "CGid" : "5 LAWE",
+    "CLid" : 1305,
+    "allowedTimeslots" : [ 33, 2, 7, 9, 25, 28 ],
+    "timeslot" : 9,
+    "courseTaskId" : 1305
+  }, {
+    "GAid" : 84,
+    "CGid" : "5 WEWI B",
+    "CLid" : 1305,
+    "allowedTimeslots" : [ 33, 2, 9, 12, 28, 31 ],
+    "timeslot" : 31,
+    "courseTaskId" : 1714
+  } ],
+  "score" : "0hard/0soft"
+}

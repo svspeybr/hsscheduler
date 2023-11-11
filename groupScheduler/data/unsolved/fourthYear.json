@@ -26,360 +26,576 @@
   } ],
   "courseLevelList" : [ {
     "CLid" : 592,
+    "numberOfAssignments" : 1,
+    "teacher" : "JPY",
     "relatedTaskIds" : [ 592 ],
     "upperBoundClassSize" : 25,
     "topic" : "AA",
     "classGroupList" : [ "4 ECWE" ]
   }, {
     "CLid" : 548,
+    "numberOfAssignments" : 1,
+    "teacher" : "JPY",
     "relatedTaskIds" : [ 548 ],
     "upperBoundClassSize" : 25,
     "topic" : "AA",
     "classGroupList" : [ "4 MT" ]
   }, {
     "CLid" : 612,
+    "numberOfAssignments" : 1,
+    "teacher" : "JPY",
     "relatedTaskIds" : [ 612 ],
     "upperBoundClassSize" : 25,
     "topic" : "AA",
     "classGroupList" : [ "4 HUM" ]
   }, {
     "CLid" : 574,
+    "numberOfAssignments" : 1,
+    "teacher" : "JPY",
     "relatedTaskIds" : [ 574 ],
     "upperBoundClassSize" : 25,
     "topic" : "AA",
     "classGroupList" : [ "4 LA", "4 GRLA" ]
   }, {
     "CLid" : 638,
+    "numberOfAssignments" : 1,
+    "teacher" : "JPY",
     "relatedTaskIds" : [ 638 ],
     "upperBoundClassSize" : 25,
     "topic" : "AA",
     "classGroupList" : [ "4 NW" ]
   }, {
     "CLid" : 1473,
+    "numberOfAssignments" : 1,
+    "teacher" : "HDE",
     "relatedTaskIds" : [ 1473 ],
     "upperBoundClassSize" : 25,
     "topic" : "ST",
     "classGroupList" : [ "4 MT" ]
   }, {
     "CLid" : 1477,
+    "numberOfAssignments" : 1,
+    "teacher" : "HDE",
     "relatedTaskIds" : [ 1477 ],
     "upperBoundClassSize" : 25,
     "topic" : "ST",
     "classGroupList" : [ "4 LA" ]
   }, {
     "CLid" : 1481,
+    "numberOfAssignments" : 2,
+    "teacher" : "HDE",
     "relatedTaskIds" : [ 1481 ],
     "upperBoundClassSize" : 25,
     "topic" : "ST",
     "classGroupList" : [ "4 NW" ]
   }, {
     "CLid" : 1365,
+    "numberOfAssignments" : 1,
+    "teacher" : "KVI",
     "relatedTaskIds" : [ 1365, 1337, 1370, 1339, 1341 ],
     "upperBoundClassSize" : 25,
     "topic" : "LO",
-    "classGroupList" : [ "4 ECWE", "4 GRLA", "4 HUM", "4 LA", "4 MT", "4 NW" ]
+    "classGroupList" : [ "4 LA", "4 HUM", "4 MT", "4 GRLA", "4 NW", "4 ECWE" ]
+  }, {
+    "CLid" : 1337,
+    "numberOfAssignments" : 1,
+    "teacher" : "KVI",
+    "relatedTaskIds" : [ 1365, 1337, 1370, 1339, 1341 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "LO",
+    "classGroupList" : [ "4 LA", "4 HUM", "4 MT", "4 GRLA", "4 NW", "4 ECWE" ]
+  }, {
+    "CLid" : 1370,
+    "numberOfAssignments" : 1,
+    "teacher" : "KVI",
+    "relatedTaskIds" : [ 1365, 1337, 1370, 1339, 1341 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "LO",
+    "classGroupList" : [ "4 LA", "4 HUM", "4 MT", "4 GRLA", "4 NW", "4 ECWE" ]
+  }, {
+    "CLid" : 1339,
+    "numberOfAssignments" : 1,
+    "teacher" : "BVD",
+    "relatedTaskIds" : [ 1365, 1337, 1370, 1339, 1341 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "LO",
+    "classGroupList" : [ "4 LA", "4 HUM", "4 MT", "4 GRLA", "4 NW", "4 ECWE" ]
+  }, {
+    "CLid" : 1341,
+    "numberOfAssignments" : 1,
+    "teacher" : "KVI",
+    "relatedTaskIds" : [ 1365, 1337, 1370, 1339, 1341 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "LO",
+    "classGroupList" : [ "4 LA", "4 HUM", "4 MT", "4 GRLA", "4 NW", "4 ECWE" ]
   }, {
     "CLid" : 1478,
+    "numberOfAssignments" : 2,
+    "teacher" : "JDK",
     "relatedTaskIds" : [ 1478 ],
     "upperBoundClassSize" : 25,
     "topic" : "FI",
     "classGroupList" : [ "4 HUM" ]
   }, {
     "CLid" : 1823,
+    "numberOfAssignments" : 1,
+    "teacher" : "?",
     "relatedTaskIds" : [ 1823 ],
     "upperBoundClassSize" : 83,
     "topic" : "HK",
-    "classGroupList" : [ "4 HUM", "4 LA", "4 NW", "4 MT", "4 ECWE", "4 GRLA" ]
+    "classGroupList" : [ "4 LA", "4 HUM", "4 MT", "4 GRLA", "4 NW", "4 ECWE" ]
   }, {
     "CLid" : 608,
+    "numberOfAssignments" : 1,
+    "teacher" : "ADB",
     "relatedTaskIds" : [ 608 ],
     "upperBoundClassSize" : 25,
     "topic" : "CH",
     "classGroupList" : [ "4 HUM", "4 GRLA" ]
   }, {
     "CLid" : 545,
+    "numberOfAssignments" : 1,
+    "teacher" : "MWI",
     "relatedTaskIds" : [ 545 ],
     "upperBoundClassSize" : 25,
     "topic" : "CH",
     "classGroupList" : [ "4 MT" ]
   }, {
     "CLid" : 658,
+    "numberOfAssignments" : 2,
+    "teacher" : "ADB",
     "relatedTaskIds" : [ 658 ],
     "upperBoundClassSize" : 25,
     "topic" : "CH",
     "classGroupList" : [ "4 NW" ]
   }, {
     "CLid" : 590,
+    "numberOfAssignments" : 1,
+    "teacher" : "MWI",
     "relatedTaskIds" : [ 590 ],
     "upperBoundClassSize" : 25,
     "topic" : "CH",
     "classGroupList" : [ "4 LA", "4 ECWE" ]
   }, {
     "CLid" : 547,
+    "numberOfAssignments" : 1,
+    "teacher" : "ADB",
     "relatedTaskIds" : [ 547 ],
     "upperBoundClassSize" : 25,
     "topic" : "BI",
     "classGroupList" : [ "4 MT" ]
   }, {
     "CLid" : 660,
+    "numberOfAssignments" : 2,
+    "teacher" : "ADB",
     "relatedTaskIds" : [ 660 ],
     "upperBoundClassSize" : 25,
     "topic" : "BI",
     "classGroupList" : [ "4 NW" ]
   }, {
     "CLid" : 604,
+    "numberOfAssignments" : 1,
+    "teacher" : "ADB",
     "relatedTaskIds" : [ 604 ],
     "upperBoundClassSize" : 25,
     "topic" : "BI",
     "classGroupList" : [ "4 LA", "4 ECWE" ]
   }, {
     "CLid" : 591,
+    "numberOfAssignments" : 1,
+    "teacher" : "ADB",
     "relatedTaskIds" : [ 591 ],
     "upperBoundClassSize" : 25,
     "topic" : "BI",
     "classGroupList" : [ "4 HUM", "4 GRLA" ]
   }, {
     "CLid" : 581,
+    "numberOfAssignments" : 2,
+    "teacher" : "NVS",
     "relatedTaskIds" : [ 581, 616, 648, 538, 554 ],
     "upperBoundClassSize" : 25,
     "topic" : "GO",
-    "classGroupList" : [ "4 ECWE", "4 GRLA", "4 HUM", "4 LA", "4 MT", "4 NW" ]
+    "classGroupList" : [ "4 LA", "4 HUM", "4 MT", "4 GRLA", "4 NW", "4 ECWE" ]
+  }, {
+    "CLid" : 616,
+    "numberOfAssignments" : 2,
+    "teacher" : "EGE",
+    "relatedTaskIds" : [ 581, 616, 648, 538, 554 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "GO",
+    "classGroupList" : [ "4 LA", "4 HUM", "4 MT", "4 GRLA", "4 NW", "4 ECWE" ]
+  }, {
+    "CLid" : 648,
+    "numberOfAssignments" : 2,
+    "teacher" : "NVS",
+    "relatedTaskIds" : [ 581, 616, 648, 538, 554 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "GO",
+    "classGroupList" : [ "4 LA", "4 HUM", "4 MT", "4 GRLA", "4 NW", "4 ECWE" ]
+  }, {
+    "CLid" : 538,
+    "numberOfAssignments" : 2,
+    "teacher" : "EGE",
+    "relatedTaskIds" : [ 581, 616, 648, 538, 554 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "GO",
+    "classGroupList" : [ "4 LA", "4 HUM", "4 MT", "4 GRLA", "4 NW", "4 ECWE" ]
+  }, {
+    "CLid" : 554,
+    "numberOfAssignments" : 2,
+    "teacher" : "NVS",
+    "relatedTaskIds" : [ 581, 616, 648, 538, 554 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "GO",
+    "classGroupList" : [ "4 LA", "4 HUM", "4 MT", "4 GRLA", "4 NW", "4 ECWE" ]
   }, {
     "CLid" : 560,
+    "numberOfAssignments" : 2,
+    "teacher" : "AMA",
     "relatedTaskIds" : [ 560 ],
     "upperBoundClassSize" : 25,
     "topic" : "EN",
     "classGroupList" : [ "4 LA", "4 GRLA" ]
   }, {
     "CLid" : 1697,
+    "numberOfAssignments" : 1,
+    "teacher" : "AMA",
     "relatedTaskIds" : [ 1697 ],
     "upperBoundClassSize" : 25,
     "topic" : "EN",
     "classGroupList" : [ "4 LA" ]
   }, {
     "CLid" : 646,
+    "numberOfAssignments" : 3,
+    "teacher" : "AMA",
     "relatedTaskIds" : [ 646 ],
     "upperBoundClassSize" : 25,
     "topic" : "EN",
     "classGroupList" : [ "4 NW" ]
   }, {
     "CLid" : 584,
+    "numberOfAssignments" : 3,
+    "teacher" : "AMA",
     "relatedTaskIds" : [ 584 ],
     "upperBoundClassSize" : 25,
     "topic" : "EN",
     "classGroupList" : [ "4 ECWE" ]
   }, {
     "CLid" : 618,
+    "numberOfAssignments" : 3,
+    "teacher" : "AMA",
     "relatedTaskIds" : [ 618 ],
     "upperBoundClassSize" : 25,
     "topic" : "EN",
     "classGroupList" : [ "4 HUM" ]
   }, {
     "CLid" : 541,
+    "numberOfAssignments" : 3,
+    "teacher" : "AMA",
     "relatedTaskIds" : [ 541 ],
     "upperBoundClassSize" : 25,
     "topic" : "EN",
     "classGroupList" : [ "4 MT" ]
   }, {
     "CLid" : 1479,
+    "numberOfAssignments" : 2,
+    "teacher" : "MBL",
     "relatedTaskIds" : [ 1479 ],
     "upperBoundClassSize" : 25,
     "topic" : "KU",
     "classGroupList" : [ "4 HUM" ]
   }, {
     "CLid" : 587,
+    "numberOfAssignments" : 4,
+    "teacher" : "JDS",
     "relatedTaskIds" : [ 587 ],
     "upperBoundClassSize" : 25,
     "topic" : "GR",
     "classGroupList" : [ "4 GRLA" ]
   }, {
     "CLid" : 624,
+    "numberOfAssignments" : 4,
+    "teacher" : "MWA",
     "relatedTaskIds" : [ 624 ],
     "upperBoundClassSize" : 25,
     "topic" : "FR",
     "classGroupList" : [ "4 HUM" ]
   }, {
     "CLid" : 1322,
+    "numberOfAssignments" : 3,
+    "teacher" : "SDP",
     "relatedTaskIds" : [ 1322 ],
     "upperBoundClassSize" : 25,
     "topic" : "FR",
     "classGroupList" : [ "4 LA", "4 GRLA" ]
   }, {
     "CLid" : 540,
+    "numberOfAssignments" : 4,
+    "teacher" : "MWA",
     "relatedTaskIds" : [ 540 ],
     "upperBoundClassSize" : 25,
     "topic" : "FR",
     "classGroupList" : [ "4 MT" ]
   }, {
     "CLid" : 652,
+    "numberOfAssignments" : 4,
+    "teacher" : "SDP",
     "relatedTaskIds" : [ 652 ],
     "upperBoundClassSize" : 25,
     "topic" : "FR",
     "classGroupList" : [ "4 NW" ]
   }, {
     "CLid" : 1135,
+    "numberOfAssignments" : 4,
+    "teacher" : "SDP",
     "relatedTaskIds" : [ 1135 ],
     "upperBoundClassSize" : 25,
     "topic" : "FR",
     "classGroupList" : [ "4 ECWE" ]
   }, {
     "CLid" : 1693,
+    "numberOfAssignments" : 2,
+    "teacher" : "ADW",
     "relatedTaskIds" : [ 1693 ],
     "upperBoundClassSize" : 25,
     "topic" : "CO",
     "classGroupList" : [ "4 MT" ]
   }, {
     "CLid" : 640,
+    "numberOfAssignments" : 1,
+    "teacher" : "LWI",
     "relatedTaskIds" : [ 640 ],
     "upperBoundClassSize" : 25,
     "topic" : "DU",
     "classGroupList" : [ "4 NW" ]
   }, {
     "CLid" : 1474,
+    "numberOfAssignments" : 1,
+    "teacher" : "LWI",
     "relatedTaskIds" : [ 1474 ],
     "upperBoundClassSize" : 25,
     "topic" : "DU",
     "classGroupList" : [ "4 LA" ]
   }, {
     "CLid" : 1482,
+    "numberOfAssignments" : 1,
+    "teacher" : "LWI",
     "relatedTaskIds" : [ 1482 ],
     "upperBoundClassSize" : 25,
     "topic" : "DU",
     "classGroupList" : [ "4 ECWE" ]
   }, {
     "CLid" : 542,
+    "numberOfAssignments" : 2,
+    "teacher" : "LWI",
     "relatedTaskIds" : [ 542 ],
     "upperBoundClassSize" : 25,
     "topic" : "DU",
     "classGroupList" : [ "4 MT" ]
   }, {
     "CLid" : 1696,
+    "numberOfAssignments" : 4,
+    "teacher" : "WNE",
     "relatedTaskIds" : [ 1696 ],
     "upperBoundClassSize" : 25,
     "topic" : "WI",
     "classGroupList" : [ "4 MT" ]
   }, {
     "CLid" : 626,
+    "numberOfAssignments" : 4,
+    "teacher" : "SVS",
     "relatedTaskIds" : [ 626 ],
     "upperBoundClassSize" : 25,
     "topic" : "WI",
     "classGroupList" : [ "4 HUM" ]
   }, {
     "CLid" : 564,
+    "numberOfAssignments" : 5,
+    "teacher" : "DVE",
     "relatedTaskIds" : [ 564 ],
     "upperBoundClassSize" : 25,
     "topic" : "WI",
     "classGroupList" : [ "4 ECWE" ]
   }, {
     "CLid" : 588,
+    "numberOfAssignments" : 5,
+    "teacher" : "DVE",
     "relatedTaskIds" : [ 588 ],
     "upperBoundClassSize" : 25,
     "topic" : "WI",
     "classGroupList" : [ "4 LA", "4 GRLA" ]
   }, {
     "CLid" : 654,
+    "numberOfAssignments" : 5,
+    "teacher" : "DVE",
     "relatedTaskIds" : [ 654 ],
     "upperBoundClassSize" : 25,
     "topic" : "WI",
     "classGroupList" : [ "4 NW" ]
   }, {
     "CLid" : 656,
+    "numberOfAssignments" : 2,
+    "teacher" : "JDC",
     "relatedTaskIds" : [ 656 ],
     "upperBoundClassSize" : 25,
     "topic" : "FY",
     "classGroupList" : [ "4 NW" ]
   }, {
     "CLid" : 1692,
+    "numberOfAssignments" : 1,
+    "teacher" : "JDC",
     "relatedTaskIds" : [ 1692 ],
     "upperBoundClassSize" : 25,
     "topic" : "FY",
     "classGroupList" : [ "4 LA", "4 ECWE" ]
   }, {
     "CLid" : 606,
+    "numberOfAssignments" : 1,
+    "teacher" : "JDC",
     "relatedTaskIds" : [ 606 ],
     "upperBoundClassSize" : 25,
     "topic" : "FY",
     "classGroupList" : [ "4 HUM", "4 GRLA" ]
   }, {
     "CLid" : 1695,
+    "numberOfAssignments" : 1,
+    "teacher" : "JDC",
     "relatedTaskIds" : [ 1695 ],
     "upperBoundClassSize" : 25,
     "topic" : "FY",
     "classGroupList" : [ "4 MT" ]
   }, {
     "CLid" : 597,
+    "numberOfAssignments" : 1,
+    "teacher" : "ADV",
     "relatedTaskIds" : [ 597 ],
     "upperBoundClassSize" : 25,
     "topic" : "LA",
     "classGroupList" : [ "4 LA" ]
   }, {
     "CLid" : 586,
+    "numberOfAssignments" : 4,
+    "teacher" : "ADV",
     "relatedTaskIds" : [ 586 ],
     "upperBoundClassSize" : 25,
     "topic" : "LA",
     "classGroupList" : [ "4 LA", "4 GRLA" ]
   }, {
     "CLid" : 1480,
+    "numberOfAssignments" : 3,
+    "teacher" : "JDK",
     "relatedTaskIds" : [ 1480 ],
     "upperBoundClassSize" : 25,
     "topic" : "SoP",
     "classGroupList" : [ "4 HUM" ]
   }, {
     "CLid" : 582,
+    "numberOfAssignments" : 4,
+    "teacher" : "GWA",
     "relatedTaskIds" : [ 582 ],
     "upperBoundClassSize" : 25,
     "topic" : "NE",
     "classGroupList" : [ "4 ECWE" ]
   }, {
     "CLid" : 650,
+    "numberOfAssignments" : 4,
+    "teacher" : "ADW",
     "relatedTaskIds" : [ 650 ],
     "upperBoundClassSize" : 25,
     "topic" : "NE",
     "classGroupList" : [ "4 NW" ]
   }, {
     "CLid" : 539,
+    "numberOfAssignments" : 4,
+    "teacher" : "DGI",
     "relatedTaskIds" : [ 539 ],
     "upperBoundClassSize" : 25,
     "topic" : "NE",
     "classGroupList" : [ "4 MT" ]
   }, {
     "CLid" : 622,
+    "numberOfAssignments" : 4,
+    "teacher" : "MBL",
     "relatedTaskIds" : [ 622 ],
     "upperBoundClassSize" : 25,
     "topic" : "NE",
     "classGroupList" : [ "4 HUM" ]
   }, {
     "CLid" : 1134,
+    "numberOfAssignments" : 4,
+    "teacher" : "MBL",
     "relatedTaskIds" : [ 1134 ],
     "upperBoundClassSize" : 25,
     "topic" : "NE",
     "classGroupList" : [ "4 LA", "4 GRLA" ]
   }, {
     "CLid" : 1338,
+    "numberOfAssignments" : 1,
+    "teacher" : "KVI",
     "relatedTaskIds" : [ 1338 ],
     "upperBoundClassSize" : 35,
     "topic" : "SP",
-    "classGroupList" : [ "4 NW", "4 MT" ]
+    "classGroupList" : [ "4 MT", "4 NW" ]
   }, {
     "CLid" : 1340,
+    "numberOfAssignments" : 1,
+    "teacher" : "KVI",
     "relatedTaskIds" : [ 1340 ],
     "upperBoundClassSize" : 48,
     "topic" : "SP",
-    "classGroupList" : [ "4 LA", "4 HUM", "4 ECWE", "4 GRLA" ]
+    "classGroupList" : [ "4 LA", "4 HUM", "4 GRLA", "4 ECWE" ]
   }, {
     "CLid" : 576,
+    "numberOfAssignments" : 2,
+    "teacher" : "TVL",
     "relatedTaskIds" : [ 576, 1298, 644, 549, 598 ],
     "upperBoundClassSize" : 25,
     "topic" : "GE",
-    "classGroupList" : [ "4 ECWE", "4 GRLA", "4 HUM", "4 LA", "4 MT", "4 NW" ]
+    "classGroupList" : [ "4 LA", "4 HUM", "4 MT", "4 GRLA", "4 NW", "4 ECWE" ]
+  }, {
+    "CLid" : 1298,
+    "numberOfAssignments" : 2,
+    "teacher" : "TVL",
+    "relatedTaskIds" : [ 576, 1298, 644, 549, 598 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "GE",
+    "classGroupList" : [ "4 LA", "4 HUM", "4 MT", "4 GRLA", "4 NW", "4 ECWE" ]
+  }, {
+    "CLid" : 644,
+    "numberOfAssignments" : 2,
+    "teacher" : "TVL",
+    "relatedTaskIds" : [ 576, 1298, 644, 549, 598 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "GE",
+    "classGroupList" : [ "4 LA", "4 HUM", "4 MT", "4 GRLA", "4 NW", "4 ECWE" ]
+  }, {
+    "CLid" : 549,
+    "numberOfAssignments" : 2,
+    "teacher" : "TVL",
+    "relatedTaskIds" : [ 576, 1298, 644, 549, 598 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "GE",
+    "classGroupList" : [ "4 LA", "4 HUM", "4 MT", "4 GRLA", "4 NW", "4 ECWE" ]
+  }, {
+    "CLid" : 598,
+    "numberOfAssignments" : 2,
+    "teacher" : "TVL",
+    "relatedTaskIds" : [ 576, 1298, 644, 549, 598 ],
+    "upperBoundClassSize" : 25,
+    "topic" : "GE",
+    "classGroupList" : [ "4 LA", "4 HUM", "4 MT", "4 GRLA", "4 NW", "4 ECWE" ]
   }, {
     "CLid" : 664,
+    "numberOfAssignments" : 5,
+    "teacher" : "JVF",
     "relatedTaskIds" : [ 664 ],
     "upperBoundClassSize" : 25,
     "topic" : "EC",
     "classGroupList" : [ "4 ECWE" ]
   }, {
     "CLid" : 1694,
+    "numberOfAssignments" : 2,
+    "teacher" : "JDE",
     "relatedTaskIds" : [ 1694 ],
     "upperBoundClassSize" : 25,
     "topic" : "EC",
@@ -387,94 +603,94 @@
   } ],
   "groupPerCourseList" : [ {
     "GPCid" : 2,
-    "CGid" : "4 ECWE",
+    "CGid" : "4 LA",
     "courseTaskId" : null,
-    "CLid" : 1365
+    "CLid" : 1341
   }, {
     "GPCid" : 3,
-    "CGid" : "4 GRLA",
+    "CGid" : "4 HUM",
     "courseTaskId" : null,
-    "CLid" : 1365
+    "CLid" : 1341
   }, {
     "GPCid" : 4,
-    "CGid" : "4 HUM",
+    "CGid" : "4 MT",
     "courseTaskId" : null,
-    "CLid" : 1365
+    "CLid" : 1341
   }, {
     "GPCid" : 5,
-    "CGid" : "4 LA",
+    "CGid" : "4 GRLA",
     "courseTaskId" : null,
-    "CLid" : 1365
+    "CLid" : 1341
   }, {
     "GPCid" : 6,
-    "CGid" : "4 MT",
+    "CGid" : "4 NW",
     "courseTaskId" : null,
-    "CLid" : 1365
+    "CLid" : 1341
   }, {
     "GPCid" : 7,
-    "CGid" : "4 NW",
+    "CGid" : "4 ECWE",
     "courseTaskId" : null,
-    "CLid" : 1365
+    "CLid" : 1341
   }, {
     "GPCid" : 8,
-    "CGid" : "4 ECWE",
+    "CGid" : "4 LA",
     "courseTaskId" : null,
-    "CLid" : 581
+    "CLid" : 554
   }, {
     "GPCid" : 9,
-    "CGid" : "4 GRLA",
+    "CGid" : "4 HUM",
     "courseTaskId" : null,
-    "CLid" : 581
+    "CLid" : 554
   }, {
     "GPCid" : 10,
-    "CGid" : "4 HUM",
+    "CGid" : "4 MT",
     "courseTaskId" : null,
-    "CLid" : 581
+    "CLid" : 554
   }, {
     "GPCid" : 11,
-    "CGid" : "4 LA",
-    "courseTaskId" : null,
-    "CLid" : 581
-  }, {
-    "GPCid" : 12,
-    "CGid" : "4 MT",
-    "courseTaskId" : null,
-    "CLid" : 581
-  }, {
-    "GPCid" : 13,
-    "CGid" : "4 NW",
-    "courseTaskId" : null,
-    "CLid" : 581
-  }, {
-    "GPCid" : 14,
-    "CGid" : "4 ECWE",
-    "courseTaskId" : null,
-    "CLid" : 576
-  }, {
-    "GPCid" : 15,
     "CGid" : "4 GRLA",
     "courseTaskId" : null,
-    "CLid" : 576
+    "CLid" : 554
   }, {
-    "GPCid" : 16,
-    "CGid" : "4 HUM",
-    "courseTaskId" : null,
-    "CLid" : 576
-  }, {
-    "GPCid" : 17,
-    "CGid" : "4 LA",
-    "courseTaskId" : null,
-    "CLid" : 576
-  }, {
-    "GPCid" : 18,
-    "CGid" : "4 MT",
-    "courseTaskId" : null,
-    "CLid" : 576
-  }, {
-    "GPCid" : 19,
+    "GPCid" : 12,
     "CGid" : "4 NW",
     "courseTaskId" : null,
-    "CLid" : 576
+    "CLid" : 554
+  }, {
+    "GPCid" : 13,
+    "CGid" : "4 ECWE",
+    "courseTaskId" : null,
+    "CLid" : 554
+  }, {
+    "GPCid" : 14,
+    "CGid" : "4 LA",
+    "courseTaskId" : null,
+    "CLid" : 598
+  }, {
+    "GPCid" : 15,
+    "CGid" : "4 HUM",
+    "courseTaskId" : null,
+    "CLid" : 598
+  }, {
+    "GPCid" : 16,
+    "CGid" : "4 MT",
+    "courseTaskId" : null,
+    "CLid" : 598
+  }, {
+    "GPCid" : 17,
+    "CGid" : "4 GRLA",
+    "courseTaskId" : null,
+    "CLid" : 598
+  }, {
+    "GPCid" : 18,
+    "CGid" : "4 NW",
+    "courseTaskId" : null,
+    "CLid" : 598
+  }, {
+    "GPCid" : 19,
+    "CGid" : "4 ECWE",
+    "courseTaskId" : null,
+    "CLid" : 598
   } ],
   "lessonAssignmentList" : [ {
     "type" : "fixedTask",

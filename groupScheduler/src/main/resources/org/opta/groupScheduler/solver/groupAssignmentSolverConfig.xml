@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<solver>
+    <warmUpSecondsSpentLimit>10</warmUpSecondsSpentLimit>
+
+    <solutionClass>org.opta.groupScheduler.domain.GroupAssignmentSolution</solutionClass>
+    <entityClass>org.opta.groupScheduler.domain.GroupAssignment</entityClass>
+
+    <scoreDirectorFactory>
+        <constraintProviderClass>org.opta.groupScheduler.solver.GroupAssignmentConstraintProvider</constraintProviderClass>
+    </scoreDirectorFactory>
+
+    <termination>
+        <secondsSpentLimit>600</secondsSpentLimit>
+    </termination>
+
+    <constructionHeuristic>
+        <constructionHeuristicType>CHEAPEST_INSERTION</constructionHeuristicType>
+    </constructionHeuristic>
+
+    <localSearch>
+        <acceptor>
+            <entityTabuSize>7</entityTabuSize>
+            <stepCountingHillClimbingSize>500</stepCountingHillClimbingSize>
+        </acceptor>
+        <forager>
+            <acceptedCountLimit>1</acceptedCountLimit>
+        </forager>
+
+        <!--
+        <acceptor>
+            <entityTabuSize>7</entityTabuSize>
+            <simulatedAnnealingStartingTemperature>1hard/20soft</simulatedAnnealingStartingTemperature>
+        </acceptor>
+        <forager>
+            <acceptedCountLimit>5</acceptedCountLimit>
+        </forager>
+        <constructionHeuristic>
+        <constructionHeuristicType>CHEAPEST_INSERTION</constructionHeuristicType>
+        </constructionHeuristic>
+        <acceptor>
+            <entityTabuSize>7</entityTabuSize>
+            <simulatedAnnealingStartingTemperature>1hard/20soft</simulatedAnnealingStartingTemperature>
+        </acceptor>
+        <forager>
+            <acceptedCountLimit>5</acceptedCountLimit>
+        </forager>
+        <acceptor>
+            <entityTabuSize>7</entityTabuSize>
+            <stepCountingHillClimbingSize>500</stepCountingHillClimbingSize>
+        </acceptor>
+        <forager>
+            <acceptedCountLimit>1</acceptedCountLimit>
+        </forager>
+        <acceptor>
+            <entityTabuSize>7</entityTabuSize>
+            <simulatedAnnealingStartingTemperature>3hard/0soft</simulatedAnnealingStartingTemperature>
+        </acceptor>
+        <forager>
+            <acceptedCountLimit>5</acceptedCountLimit>
+        </forager>
+        -->
+    </localSearch>
+
+</solver>
